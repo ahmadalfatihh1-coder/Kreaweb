@@ -1,0 +1,1047 @@
+KREAWEB — PRD WEBSITE JASA PEMBUATAN WEBSITE\
+Versi: 1.0\
+Status: Draft untuk development
+
+\==================================================
+
+1. INFORMASI UMUM\
+   \==================================================
+
+Nama website:\
+Kreaweb
+
+Jenis website:\
+Website company profile / landing page jasa pembuatan website.
+
+Tujuan utama:
+
+- Menampilkan KreaWeb sebagai penyedia jasa pembuatan website profesional.
+- Membangun kepercayaan calon klien.
+- Menjelaskan keunggulan dan proses pengerjaan.
+- Menampilkan value bahwa website merupakan investasi untuk bisnis.
+- Mengarahkan calon klien untuk melakukan konsultasi melalui WhatsApp.
+- Menjadi portfolio utama KreaWeb.
+
+Target pengguna:
+
+- UMKM
+- Pengusaha / pemilik bisnis
+- Personal brand
+- Freelancer
+- Profesional
+- Yayasan
+- Organisasi
+- Pemilik portfolio
+- Bisnis yang ingin meningkatkan kredibilitas online
+- Bisnis yang selama ini hanya mengandalkan Instagram / TikTok / WhatsApp
+
+Framework:\
+Next.js
+
+UI:\
+React
+
+Styling:\
+Tailwind CSS
+
+Icon:\
+Lucide React
+
+Animation:\
+CSS animation / Framer Motion jika diperlukan
+
+Database:\
+TIDAK ADA
+
+Backend:\
+TIDAK DIPERLUKAN untuk versi awal.
+
+Authentication:\
+TIDAK ADA.
+
+API:\
+TIDAK ADA kecuali integrasi eksternal yang memang diperlukan.
+
+Website bersifat:\
+Static / marketing website.
+
+Prioritas:
+
+1. Mobile responsiveness
+2. UI/UX
+3. Performance
+4. SEO dasar
+5. Accessibility
+6. Animation
+
+Gaya visual:\
+Clean\
+Modern\
+Elegant\
+Premium\
+Minimalist\
+SaaS-inspired\
+Professional\
+Interactive
+
+Warna utama:\
+White\
+Black\
+Dark Blue\
+Blue Gray\
+Slate
+
+green
+
+
+
+Accent:\
+Deep Blue / Dark Blue
+
+CTA WhatsApp:\
+Green
+
+Hindari:
+
+- Terlalu banyak gradient
+- Warna terlalu ramai
+- Emoji warna-warni
+- Card berlebihan
+- Shadow terlalu berat
+- Animasi berlebihan
+- Layout yang terlihat seperti template generik
+- Text terlalu padat
+
+Prinsip desain:
+
+- Banyak whitespace
+- Typography kuat
+- Hierarki visual jelas
+- Border tipis
+- Radius modern
+- Shadow subtle
+- Animasi halus
+- Fokus pada conversion
+
+Website harus dirancang dari ukuran mobile terlebih dahulu.
+
+Prioritas pengujian:\
+320px\
+360px\
+375px\
+390px\
+414px\
+430px\
+768px\
+1024px\
+1280px\
+1440px+
+
+Persyaratan:
+
+- Tidak boleh ada horizontal overflow.
+- Semua tombol mudah ditekan dengan jari.
+- Text tidak terpotong.
+- Navbar tidak bertabrakan.
+- Card tidak keluar viewport.
+- Gambar tidak menyebabkan layout bergeser.
+- FAQ nyaman digunakan di mobile.
+- Timeline berubah menjadi vertical pada mobile.
+- Spacing disesuaikan berdasarkan ukuran layar.
+- Semua CTA tetap mudah ditemukan.
+
+Urutan halaman:
+
+1. Navbar
+2. Hero
+3. Trust / Quick Value
+4. Kenapa Pilih KreaWeb?
+5. Website Adalah Investasi
+6. Apa yang Bisa Kami Buat?
+7. Proses Pengerjaan
+8. FAQ
+9. Final CTA / WhatsApp
+10. Footer
+
+Desktop:
+
+Kiri:\
+Logo Kreaweb
+
+Kanan:\
+Keunggulan\
+Proses\
+FAQ\
+Portfolio\
+Konsultasi
+
+CTA:\
+Konsultasi
+
+Mobile:
+
+Kiri:\
+Logo + KreaWeb
+
+Kanan:\
+CTA kecil atau menu hamburger.
+
+Navbar:
+
+- Sticky
+- Background semi-transparent / solid saat scroll
+- Backdrop blur ringan
+- Border bottom subtle
+- Tidak mengambil terlalu banyak ruang
+
+Headline utama:
+
+Buat website untuk memperluas jangkaun produk atau jasa ynag kamu tawarkan.
+
+Alternatif headline:
+
+"Website profesional untuk membawa bisnismu lebih jauh."
+
+Subheadline:
+
+Kami membantu bisnis, UMKM, personal brand, dan organisasi memiliki website profesional yang cepat, modern, responsive, dan siap digunakan untuk membangun kepercayaan pelanggan.
+
+CTA PRIMARY:
+
+Konsultasi Gratis
+
+CTA SECONDARY:
+
+Lihat Portfolio
+
+Visual:
+
+Gunakan mockup / preview website sebagai visual utama.
+
+Visual dapat berupa:
+
+- Browser mockup
+- Screenshot portfolio
+- Abstract UI
+- Floating cards
+- Website preview
+
+Hero harus terasa:
+
+- Premium
+- Tidak terlalu ramai
+- Fokus pada headline
+- CTA jelas
+
+Animation:
+
+- Headline fade + slide up
+- Subheadline fade
+- CTA muncul setelah headline
+- Mockup fade dari kanan
+- Floating element bergerak sangat halus
+
+Tujuan:\
+Memberikan informasi cepat sebelum user scroll lebih jauh.
+
+Contoh:
+
+4–7 Hari\
+Pengerjaan Website
+
+1 Jutaan\
+Harga Mulai
+
+Unlimited\
+Revisi Selama Pengerjaan
+
+Responsive\
+Mobile & Desktop
+
+SEO Dasar\
+Sudah Termasuk
+
+Integrasi\
+WhatsApp, Maps, Social Media, Email
+
+Eyebrow:
+
+KENAPA KREAWEB?
+
+Headline:
+
+Website profesional tanpa proses yang ribet.
+
+Description:
+
+Kami menggabungkan desain modern, teknologi yang tepat, dan pemahaman terhadap kebutuhan bisnis untuk menghasilkan website yang bukan hanya terlihat bagus, tetapi juga membantu bisnis Anda terlihat lebih profesional dan mudah ditemukan.
+
+Tampilkan 6 benefit dalam card.
+
+---
+
+Judul:\
+Revisi Tak Terbatas Selama Pengerjaan
+
+Deskripsi:\
+Kami terbuka terhadap perubahan selama proses pengerjaan. Anda dapat memberikan feedback dan melakukan revisi sampai desain dan website sesuai dengan kebutuhan yang telah disepakati.
+
+Icon:\
+Refresh / Pencil
+
+---
+
+Judul:\
+Selesai Dalam 4–7 Hari
+
+Deskripsi:\
+Kami mengutamakan proses kerja yang efisien agar website dapat segera digunakan tanpa mengorbankan kualitas desain, fungsi, dan pengalaman pengguna.
+
+Catatan:\
+Waktu pengerjaan dapat berbeda tergantung kompleksitas website dan jumlah fitur.
+
+---
+
+Judul:\
+Mulai Dari 1 Jutaan
+
+Deskripsi:\
+Dapatkan website profesional dengan harga yang tetap terjangkau. Paket dapat mencakup domain seperti .com atau .id, hosting, integrasi aplikasi eksternal, dan SEO dasar sesuai paket dan kebutuhan.
+
+Catatan:\
+Harga akhir disesuaikan dengan kebutuhan dan kompleksitas project.
+
+---
+
+Judul:\
+Terhubung Dengan Tools yang Anda Gunakan
+
+Deskripsi:\
+Website dapat diintegrasikan dengan berbagai kebutuhan bisnis seperti WhatsApp, Google Maps, Instagram, TikTok, email, formulir kontak, dan layanan eksternal lainnya.
+
+Icon:\
+Puzzle / Link
+
+---
+
+Judul:\
+Bukan Sekadar Website yang Bagus
+
+Deskripsi:\
+Kami membantu menyusun struktur dan copywriting yang membuat informasi bisnis lebih jelas, menarik, dan mudah dipahami oleh calon pelanggan.
+
+Fokus:
+
+- Headline
+- Value proposition
+- CTA
+- Deskripsi layanan
+- Struktur informasi
+- Conversion
+
+---
+
+Judul:\
+Nyaman Dibuka di Semua Perangkat
+
+Deskripsi:\
+Website dirancang dengan pendekatan mobile-first agar tetap terlihat profesional dan nyaman digunakan melalui smartphone, tablet, maupun desktop.
+
+Icon:\
+Smartphone / Monitor
+
+Eyebrow:
+
+LEBIH DARI SEKADAR WEBSITE
+
+Headline:
+
+Website yang bagus bukan sekadar pengeluaran.\
+Ini adalah investasi untuk brand Anda.
+
+Description:
+
+Di era digital, calon pelanggan sering mencari informasi tentang sebuah bisnis sebelum memutuskan untuk membeli. Website menjadi tempat di mana mereka dapat mengenal bisnis Anda, melihat layanan, dan menentukan apakah bisnis Anda layak dipercaya.
+
+Tampilkan 3 poin utama.
+
+---
+
+Judul:\
+Buat Bisnis Lebih Mudah Ditemukan
+
+Deskripsi:\
+Website memberikan tempat bagi calon pelanggan untuk menemukan informasi bisnis Anda melalui mesin pencari maupun berbagai channel digital.
+
+Contoh:\
+Alamat\
+Layanan\
+Produk\
+Kontak\
+Informasi bisnis
+
+---
+
+Judul:\
+Bangun Kesan Profesional
+
+Deskripsi:\
+Website yang dirancang dengan baik dapat memberikan kesan profesional dan membantu calon pelanggan merasa lebih yakin sebelum menghubungi atau membeli dari bisnis Anda.
+
+---
+
+Judul:\
+Bisnis Anda Tetap Online
+
+Deskripsi:\
+Website dapat menjadi pusat informasi bisnis yang dapat diakses kapan saja. Pelanggan tidak harus menunggu admin online hanya untuk mengetahui layanan, lokasi, produk, atau informasi penting lainnya.
+
+Headline:
+
+Website untuk berbagai kebutuhan bisnis.
+
+Description:
+
+Setiap bisnis memiliki kebutuhan yang berbeda. Kami menyesuaikan struktur, desain, dan fitur website berdasarkan tujuan project.
+
+Card:
+
+01\
+WEBSITE UMKM
+
+Untuk:
+
+- Toko
+- Kuliner
+- Jasa
+- Local business
+- Bisnis keluarga
+
+Contoh fitur:\
+WhatsApp\
+Google Maps\
+Produk / layanan\
+Kontak
+
+02\
+COMPANY PROFILE
+
+Untuk:
+
+- Perusahaan
+- Agency
+- Startup
+- Organisasi
+
+Contoh fitur:\
+Tentang perusahaan\
+Layanan\
+Portfolio\
+Team\
+Contact
+
+03\
+PORTFOLIO
+
+Untuk:
+
+- Freelancer
+- Kreator
+- Designer
+- Developer
+- Profesional
+
+Contoh fitur:\
+Project\
+Skill\
+About\
+Contact\
+Social media
+
+04\
+YAYASAN / ORGANISASI
+
+Untuk:
+
+- Yayasan
+- Komunitas
+- Organisasi
+
+Contoh fitur:\
+Tentang\
+Program\
+Dokumentasi\
+Kontak\
+Donasi jika diperlukan
+
+05\
+LANDING PAGE
+
+Untuk:
+
+- Produk
+- Campaign
+- Event
+- Marketing
+
+Fokus:\
+Conversion\
+CTA\
+Copywriting\
+Product information
+
+Headline:
+
+Semua yang dibutuhkan untuk website profesional.
+
+Fitur:
+
+Responsive Design\
+Website menyesuaikan tampilan dengan berbagai ukuran layar.
+
+WhatsApp Integration\
+Calon pelanggan dapat langsung menghubungi bisnis melalui WhatsApp.
+
+Google Maps\
+Memudahkan pelanggan menemukan lokasi bisnis.
+
+Social Media Integration\
+Hubungkan website dengan Instagram, TikTok, dan platform lainnya.
+
+Email\
+Sediakan jalur komunikasi profesional melalui email.
+
+Contact Form\
+Memudahkan calon pelanggan mengirim pertanyaan.
+
+SEO Dasar\
+Struktur dasar website dipersiapkan agar lebih mudah dipahami mesin pencari.
+
+Performance Optimization\
+Website dibuat dengan memperhatikan kecepatan dan efisiensi.
+
+Custom Design\
+Desain disesuaikan dengan identitas dan kebutuhan bisnis.
+
+CTA Optimization\
+Penempatan tombol dan informasi diarahkan agar pengunjung lebih mudah melakukan tindakan.
+
+Eyebrow:
+
+PROSES KAMI
+
+Headline:
+
+Dari ide hingga website siap digunakan.
+
+Description:
+
+Kami membuat proses pengerjaan sesederhana mungkin agar Anda selalu mengetahui tahap project yang sedang berjalan.
+
+DESKTOP:\
+Timeline horizontal.
+
+MOBILE:\
+Timeline vertical.
+
+---
+
+## 01 — KONSULTASI
+
+Deskripsi:
+
+Kami memahami bisnis, kebutuhan, target pelanggan, fitur yang dibutuhkan, referensi desain, serta tujuan website Anda.
+
+Output:\
+Brief project dan kebutuhan website.
+
+---
+
+## 02 — DESAIN UI/UX
+
+Deskripsi:
+
+Kami menyusun struktur halaman dan desain visual website berdasarkan identitas brand dan kebutuhan pengguna.
+
+Output:\
+Konsep dan desain interface website.
+
+---
+
+## 03 — PENGEMBANGAN
+
+Deskripsi:
+
+Desain kemudian dikembangkan menjadi website yang responsif, interaktif, dan dapat digunakan pada berbagai perangkat.
+
+Output:\
+Website versi development.
+
+---
+
+## 04 — TESTING
+
+Deskripsi:
+
+Kami memeriksa fungsi, tampilan, responsive layout, link, integrasi, dan berbagai bagian website untuk memastikan semuanya berjalan sebagaimana mestinya.
+
+Output:\
+Website siap diluncurkan.
+
+---
+
+## 05 — LAUNCHING
+
+Deskripsi:
+
+Website dipublikasikan dan aset website yang menjadi hak klien diserahkan sesuai kesepakatan.
+
+Output:\
+Website live.
+
+Headline:
+
+Pertanyaan yang sering ditanyakan.
+
+Description:
+
+Masih memiliki pertanyaan? Berikut beberapa hal yang paling sering ditanyakan calon klien.
+
+---
+
+## FAQ 01
+
+Pertanyaan:\
+Website ini cocok untuk siapa?
+
+Jawaban:
+
+cocok untuk berbagai kebutuhan seperti bisnis UMKM, company profile, personal portfolio, personal brand, jasa profesional, yayasan, organisasi, maupun bisnis yang ingin memiliki kehadiran digital yang lebih profesional.
+
+---
+
+## FAQ 02
+
+Pertanyaan:\
+Apakah website sepenuhnya menjadi milik klien?
+
+Jawaban:
+
+Ya. Setelah project selesai dan sesuai dengan kesepakatan, aset website seperti domain, hosting, dan source code akan diberikan kepada klien tanpa biaya tambahan di luar biaya project yang telah disepakati.
+
+---
+
+## FAQ 03
+
+Pertanyaan:\
+Apakah tersedia maintenance setelah website selesai?
+
+Jawaban:
+
+Ya. Kami dapat membantu mengevaluasi dan memperbaiki bug atau error yang mungkin ditemukan setelah website diluncurkan. Detail dan biaya maintenance dapat disesuaikan berdasarkan kebutuhan.
+
+---
+
+## FAQ 04
+
+Pertanyaan:\
+Apakah website dapat dikembangkan lagi di masa depan?
+
+Jawaban:
+
+Bisa. Website dapat dikembangkan dengan menambahkan fitur, halaman, integrasi, maupun perubahan desain sesuai kebutuhan bisnis di masa depan.
+
+---
+
+## FAQ 05
+
+Pertanyaan:\
+Berapa lama pengerjaan website?
+
+Jawaban:
+
+Umumnya website dapat diselesaikan dalam 4–7 hari. Namun, waktu pengerjaan dapat berbeda tergantung jumlah halaman, fitur, tingkat kompleksitas, jumlah revisi, dan kebutuhan project.
+
+Headline:
+
+Mau mulai punya website profesional?
+
+Description:
+
+Ceritakan kebutuhan bisnis Anda kepada kami.\
+Kami akan membantu menentukan struktur, fitur, dan solusi website yang paling sesuai dengan kebutuhan Anda.
+
+CTA:
+
+KONSULTASI VIA WHATSAPP
+
+WhatsApp:\
+082161175424
+
+Button:\
+[ICON WHATSAPP] Hubungi Admin
+
+Button style:
+
+- Pill / rounded
+- Hijau WhatsApp
+- Icon WhatsApp
+- Text putih
+- Hover glow subtle
+
+Tambahkan social media:
+
+TikTok\
+Instagram
+
+Keduanya clickable.
+
+Logo:\
+KreaWeb
+
+Tagline:
+
+Website profesional untuk membantu bisnis tumbuh di era digital.
+
+Navigation:
+
+Home\
+Keunggulan\
+Proses\
+FAQ\
+Portfolio\
+Konsultasi
+
+Contact:
+
+WhatsApp:\
+082161175424
+
+Email:\
+[EMAIL KREAWEB]
+
+Social:
+
+Instagram:\
+[LINK INSTAGRAM]
+
+TikTok:\
+[LINK TIKTOK]
+
+Copyright:
+
+© 2026 KreaWeb. All rights reserved.
+
+Footer social icon:
+
+- TikTok
+- Instagram
+- Email
+
+Warna:\
+Monochrome\
+Tidak menggunakan warna mencolok.
+
+Semua icon harus clickable.
+
+Semua animasi harus terasa premium dan tidak mengganggu.
+
+Hero:
+
+- Fade in
+- Slide up
+- Mockup slide from right
+
+Section:
+
+- Fade in ketika masuk viewport
+- Slide up ringan
+
+Benefit cards:
+
+- Hover translateY
+- Border accent
+- Subtle glow
+- Icon transition
+
+Investment section:
+
+- Content fade dari kiri
+- Visual fade dari kanan
+
+Process:
+
+- Timeline line muncul secara bertahap
+- Number muncul dengan fade
+- Active step dapat diberi accent
+
+FAQ:
+
+- Accordion
+- Smooth height animation
+- Rotate icon 180 derajat ketika terbuka
+
+CTA:
+
+- Subtle glow
+- Button scale sangat kecil ketika hover
+
+Social icons:
+
+- Smooth hover
+- Tidak menggunakan animasi berlebihan
+
+Mobile:\
+Animasi harus lebih ringan.
+
+Wajib:
+
+- Semantic HTML
+- Proper heading hierarchy
+- Alt text untuk image
+- Button harus bisa digunakan keyboard
+- Link memiliki label yang jelas
+- Kontras warna cukup
+- Focus state jelas
+- FAQ dapat dibuka menggunakan keyboard
+- Tidak bergantung hanya pada hover
+- Respect prefers-reduced-motion
+
+Title:
+
+KreaWeb — Jasa Pembuatan Website Profesional
+
+Meta description:
+
+KreaWeb membantu bisnis, UMKM, personal brand, dan organisasi membuat website profesional, modern, responsive, dan terjangkau mulai dari 1 jutaan.
+
+Keywords utama:
+
+jasa pembuatan website\
+jasa website UMKM\
+jasa buat website\
+jasa pembuatan website murah\
+jasa website profesional\
+website UMKM\
+website company profile\
+jasa web Indonesia
+
+SEO structure:
+
+H1:\
+Buat Website Untuk Marketing Produkmu
+
+H2:\
+Kenapa Pilih KreaWeb?\
+H2:\
+Website yang Bagus Adalah Investasi\
+H2:\
+Apa yang Bisa Kami Buat?\
+H2:\
+Proses Pengerjaan\
+H2:\
+Pertanyaan yang Sering Ditanyakan
+
+Tambahkan:
+
+- Open Graph metadata
+- Favicon
+- robots.txt
+- sitemap
+- canonical URL
+- semantic HTML
+
+Target:
+
+Performance:\
+90+
+
+Accessibility:\
+95+
+
+Best Practices:\
+95+
+
+SEO:\
+95+
+
+Prioritas:
+
+- Optimized images
+- Lazy loading
+- Minimal JavaScript
+- Hindari library yang tidak diperlukan
+- Hindari animasi berat
+- Hindari video autoplay berat
+- Gunakan font secara efisien
+- Hindari layout shift
+- Optimalkan LCP
+- Optimalkan CLS
+- Optimalkan TBT/INP
+
+app/
+
+layout.js\
+page.js\
+globals.css
+
+components/
+
+Navbar.jsx\
+Hero.jsx\
+TrustBar.jsx\
+WhyKreaweb.jsx\
+InvestmentSection.jsx\
+Services.jsx\
+Features.jsx\
+Process.jsx\
+FAQ.jsx\
+FinalCTA.jsx\
+Footer.jsx
+
+public/
+
+images/\
+logo/\
+portfolio/
+
+PAGE: /
+
+Navbar\
+↓\
+Hero\
+↓\
+Trust Bar\
+↓\
+Why KreaWeb\
+↓\
+Website Investment\
+↓\
+Services\
+↓\
+Features\
+↓\
+Process\
+↓\
+FAQ\
+↓\
+Final CTA\
+↓\
+Footer
+
+WhatsApp:
+
+[https://wa.me/6282161175424](https://wa.me/6282161175424)
+
+Instagram:\
+[ISI LINK]
+
+TikTok:\
+[ISI LINK]
+
+Email:\
+[ISI EMAIL]
+
+[ ] Logo final KreaWeb\
+[ ] Link Instagram\
+[ ] Link TikTok\
+[ ] Email KreaWeb\
+[ ] Domain final\
+[ ] Portfolio website\
+[ ] Screenshot portfolio\
+[ ] Foto / visual jika diperlukan\
+[ ] Detail paket harga\
+[ ] Detail maintenance\
+[ ] Detail layanan\
+[ ] Terms & conditions\
+[ ] Privacy policy jika diperlukan
+
+JANGAN membuat database.
+
+JANGAN membuat authentication.
+
+JANGAN membuat dashboard.
+
+JANGAN membuat backend kompleks.
+
+JANGAN membuat sistem login.
+
+JANGAN memasukkan fitur SaaS yang tidak diperlukan.
+
+Website harus fokus sebagai:\
+MARKETING WEBSITE + PORTFOLIO + LEAD GENERATION.
+
+Prioritas utama:
+
+1. Mobile UX
+2. Clean UI
+3. Conversion
+4. Performance
+5. SEO
+6. Accessibility
+7. Animation
+8. Desktop layout
+
+KreaWeb bukan hanya menjual "website".
+
+KreaWeb menjual:
+
+PROFESSIONAL ONLINE PRESENCE
+
+Website harus diposisikan sebagai alat untuk:
+
+- Membangun kredibilitas
+- Menjelaskan bisnis
+- Mendapatkan calon pelanggan
+- Mempermudah pelanggan menghubungi bisnis
+- Membantu bisnis ditemukan
+- Memperkuat brand
+
+Primary:
+
+Konsultasi Gratis
+
+Secondary:
+
+Lihat Portfolio
+
+Final CTA:
+
+Mulai Buat Website Anda
+
+WhatsApp:
+
+Hubungi Admin
+
+Alternative:
+
+Diskusikan Project Anda
+
+Website harus terlihat seperti:
+
+"Agency / SaaS premium"
+
+Bukan seperti:
+
+"Website template UMKM."
+
+Gunakan:
+
+- whitespace
+- typography besar
+- layout asimetris secukupnya
+- subtle borders
+- clean cards
+- premium spacing
+- micro-interactions
+- smooth scrolling
+- elegant motion
+
+Jangan:
+
+- memenuhi layar dengan card
+- menggunakan terlalu banyak gradient
+- menggunakan terlalu banyak icon
+- menggunakan emoji
+- menggunakan animasi yang membuat website terasa seperti game
+- membuat setiap section terlihat sama
