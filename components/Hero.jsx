@@ -57,50 +57,66 @@ export default function Hero() {
             className="animate-slide-right w-full lg:w-1/2"
             style={{ animationDelay: '0.6s', opacity: 0 }}
           >
-            <div className="relative mx-auto max-w-[520px]">
-              {/* Browser mockup frame */}
-              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_8px_40px_rgba(0,0,0,0.06)]">
-                {/* Browser top bar */}
-                <div className="flex items-center gap-1.5 border-b border-slate-100 bg-slate-50 px-4 py-3">
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f56]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#27c93f]" />
+            <div className="relative mx-auto flex h-[340px] w-[320px] items-center justify-center sm:h-[400px] sm:w-[380px] lg:h-[460px] lg:w-[460px]">
+              {/* Card 1 — back left (dark blue website preview) */}
+              <div className="absolute left-0 top-10 z-10 w-[190px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_20px_50px_-15px_rgba(15,42,74,0.35)] sm:w-[230px] lg:w-[260px]">
+                <div className="flex items-center gap-1.5 border-b border-slate-100 bg-slate-50 px-3 py-2">
+                  <span className="h-2 w-2 rounded-full bg-slate-300" />
+                  <span className="h-2 w-2 rounded-full bg-slate-300" />
+                  <span className="h-2 w-2 rounded-full bg-slate-300" />
                 </div>
-
-                {/* Mockup content */}
-                <div className="space-y-4 p-5 md:p-6">
-                  {/* Hero placeholder */}
-                  <div className="space-y-2 rounded-lg bg-[#f8fafc] p-4 md:p-5">
-                    <div className="h-4 w-2/3 rounded bg-slate-200" />
-                    <div className="h-4 w-1/2 rounded bg-slate-100" />
-                    <div className="mt-2 h-8 w-36 rounded-full bg-[#3b82f6]" />
+                <div className="space-y-2 bg-[#0f2a4a] p-3">
+                  <div className="h-3 w-3/4 rounded bg-[#3b82f6]" />
+                  <div className="h-2 w-full rounded bg-[#1e3a5f]" />
+                  <div className="h-2 w-5/6 rounded bg-[#1e3a5f]" />
+                  <div className="mt-1 flex gap-2">
+                    <div className="h-6 w-14 rounded bg-[#25D366]" />
+                    <div className="h-6 w-14 rounded bg-[#3b82f6]/30" />
                   </div>
-
-                  {/* Section placeholder */}
-                  <div className="space-y-2.5 rounded-lg border border-slate-100 bg-white p-4 md:p-5">
-                    <div className="h-3 w-1/3 rounded bg-slate-200" />
-                    <div className="flex gap-3">
-                      <div className="h-16 flex-1 rounded-lg bg-slate-50" />
-                      <div className="h-16 flex-1 rounded-lg bg-slate-50" />
-                      <div className="h-16 flex-1 rounded-lg bg-slate-50" />
-                    </div>
-                  </div>
-
-                  {/* Another placeholder */}
-                  <div className="space-y-2 rounded-lg border border-slate-100 bg-white p-4 md:p-5">
-                    <div className="h-3 w-1/4 rounded bg-slate-200" />
-                    <div className="h-2 w-full rounded bg-slate-50" />
-                    <div className="h-2 w-5/6 rounded bg-slate-50" />
-                  </div>
+                </div>
+                <div className="space-y-2 p-3">
+                  <div className="h-2 w-full rounded bg-slate-100" />
+                  <div className="h-2 w-3/4 rounded bg-slate-100" />
                 </div>
               </div>
 
-              {/* Floating accent element — subtle */}
-              <div
-                className="animate-float absolute -right-3 -top-3 hidden h-14 w-14 items-center justify-center rounded-2xl bg-[#3b82f6] shadow-[0_8px_28px_rgba(59,130,246,0.35)] md:flex"
-                aria-hidden="true"
-              >
-                <span className="text-lg font-bold text-white">✦</span>
+              {/* Card 2 — right middle (light website preview) */}
+              <div className="absolute right-0 top-24 z-20 w-[190px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_20px_50px_-15px_rgba(15,42,74,0.4)] sm:w-[230px] lg:w-[260px]">
+                <div className="flex items-center gap-1.5 border-b border-slate-100 bg-slate-50 px-3 py-2">
+                  <span className="h-2 w-2 rounded-full bg-slate-300" />
+                  <span className="h-2 w-2 rounded-full bg-slate-300" />
+                  <span className="h-2 w-2 rounded-full bg-slate-300" />
+                </div>
+                <div className="space-y-2.5 p-3">
+                  <div className="h-3 w-1/2 rounded bg-[#3b82f6]" />
+                  <div className="flex gap-2">
+                    <div className="h-14 flex-1 rounded-lg bg-slate-100" />
+                    <div className="h-14 flex-1 rounded-lg bg-slate-100" />
+                  </div>
+                  <div className="h-2 w-full rounded bg-slate-100" />
+                  <div className="h-2 w-2/3 rounded bg-slate-100" />
+                </div>
+              </div>
+
+              {/* Card 3 — front center (main website preview) */}
+              <div className="absolute bottom-0 left-1/2 z-30 w-[220px] -translate-x-1/2 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_30px_60px_-20px_rgba(15,42,74,0.5)] sm:w-[250px] lg:w-[285px]">
+                <div className="flex items-center gap-1.5 border-b border-slate-100 bg-slate-50 px-3 py-2">
+                  <span className="h-2 w-2 rounded-full bg-[#ff5f56]" />
+                  <span className="h-2 w-2 rounded-full bg-[#ffbd2e]" />
+                  <span className="h-2 w-2 rounded-full bg-[#27c93f]" />
+                </div>
+                <div className="space-y-3 p-4">
+                  <div className="space-y-2 rounded-lg bg-[#f8fafc] p-3">
+                    <div className="h-3 w-2/3 rounded bg-[#0f2a4a]" />
+                    <div className="h-2 w-full rounded bg-slate-200" />
+                    <div className="mt-1 h-7 w-24 rounded-full bg-[#25D366]" />
+                  </div>
+                  <div className="flex gap-2">
+                    <div className="h-12 flex-1 rounded-lg bg-slate-100" />
+                    <div className="h-12 flex-1 rounded-lg bg-slate-100" />
+                    <div className="h-12 flex-1 rounded-lg bg-slate-100" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
