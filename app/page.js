@@ -1,6 +1,5 @@
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import TrustBar from '../components/TrustBar';
 import WhyKreaweb from '../components/WhyKreaweb';
 import InvestmentSection from '../components/InvestmentSection';
 import Services from '../components/Services';
@@ -16,7 +15,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <TrustBar />
         <WhyKreaweb />
         <InvestmentSection />
         <Services />
