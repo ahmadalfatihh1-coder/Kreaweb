@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Plus } from 'lucide-react';
+import { ChevronDown, Minus } from 'lucide-react';
 
 const FAQS = [
   {
@@ -18,16 +18,21 @@ const FAQS = [
   },
   {
     id: '03',
+    question: 'Apakah keamanan website kokoh?',
+    answer: 'Tentu saja, website memiliki sertifikat SSL  dan telah melalui uji coba keamanan cyber sebelum di publish.',
+  },
+  {
+    id: '04',
     question: 'Apakah tersedia maintenance setelah website selesai?',
     answer: 'Ya. Kami bantu perbaiki bug atau error setelah website diluncurkan.',
   },
   {
-    id: '04',
+    id: '05',
     question: 'Apakah website dapat dikembangkan lagi di masa depan?',
-    answer: 'Bisa. Website bisa ditambah fitur, halaman, atau perubahan desain kapan saja.',
+    answer: 'Bisa banget. Website bisa ditambah fitur, halaman, atau perubahan desain kapan saja.',
   },
   {
-    id: '05',
+    id: '06',
     question: 'Berapa lama pengerjaan website?',
     answer: 'Umumnya 4–7 hari, tergantung jumlah halaman dan fitur.',
   },
@@ -73,11 +78,11 @@ export default function FAQ() {
                   </span>
                   <span
                     className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ${
-                      isOpen ? 'rotate-45 border-[#3b82f6] bg-[#3b82f6] text-white' : 'border-slate-200 text-[#3b82f6]'
+                      isOpen ? 'border-[#3b82f6] bg-[#3b82f6] text-white' : 'border-slate-200 text-[#3b82f6]'
                     }`}
                     aria-hidden="true"
                   >
-                    <Plus size={16} />
+                    {isOpen ? <Minus size={18} /> : <ChevronDown size={18} />}
                   </span>
                 </button>
 

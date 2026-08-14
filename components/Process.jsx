@@ -7,37 +7,37 @@ const STEPS = [
   {
     id: '01',
     icon: MessagesSquare,
-    title: 'KONSULTASI',
+    title: 'KONSULTASI & NEGOSIASI',
     description: 'Kami pahami bisnis, kebutuhan, dan tujuan website Anda.',
-    output: 'Brief project dan kebutuhan website.',
+    
   },
   {
     id: '02',
     icon: PenTool,
     title: 'DESAIN UI/UX',
     description: 'Menyusun struktur halaman dan desain visual sesuai identitas brand Anda.',
-    output: 'Konsep dan desain interface website.',
+  
   },
   {
     id: '03',
     icon: Code2,
     title: 'PENGEMBANGAN',
     description: 'Desain dikembangkan menjadi website responsif dan siap digunakan.',
-    output: 'Website versi development.',
+    
   },
   {
     id: '04',
     icon: CheckCircle2,
     title: 'TESTING',
     description: 'Kami periksa semua fungsi dan tampilan agar berjalan lancar.',
-    output: 'Website siap diluncurkan.',
+    
   },
   {
     id: '05',
     icon: Rocket,
-    title: 'LAUNCHING',
+    title: 'PUBLISH',
     description: 'Website dipublikasikan dan aset diserahkan sesuai kesepakatan.',
-    output: 'Website live.',
+    
   },
 ];
 
@@ -72,13 +72,13 @@ export default function Process() {
       <div className="mx-auto max-w-[1280px] px-5 md:px-8 lg:px-10">
         <div className="mx-auto mb-12 max-w-[640px] text-center md:mb-16">
           <span className="text-[13px] font-semibold uppercase tracking-[0.15em] text-[#3b82f6]">
-            PROSES KAMI
+            Alur Pengerjaan 
           </span>
           <h2 className="mt-3 text-[26px] font-bold leading-[1.2] text-white sm:text-[32px] md:text-[38px]">
-            Dari ide hingga website siap digunakan.
+            Dari Konsultasi hingga Website Siap Digunakan.
           </h2>
           <p className="mt-4 text-[15px] leading-relaxed text-[#b8c9e0] md:text-[16px]">
-            Pahami setiap tahap project yang sedang berjalan.
+            Proses ini simple, anda hanya perlu memberi informasi dan terima jadi.
           </p>
         </div>
 
@@ -166,9 +166,6 @@ export default function Process() {
                     </h3>
                     <p className="mt-2 text-[13px] leading-relaxed text-[#b8c9e0]">
                       {step.description}
-                    </p>
-                    <p className="mt-2 text-[12px] font-medium text-[#7ea3cc]">
-                      <span className="uppercase tracking-wide">Output:</span> {step.output}
                     </p>
                   </div>
                 </div>

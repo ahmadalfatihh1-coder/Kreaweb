@@ -8,36 +8,36 @@ const CATEGORIES = [
     id: '01',
     icon: Store,
     label: 'WEBSITE UMKM',
-    untuk: ['Toko', 'Kuliner', 'Jasa', 'Local business', 'Bisnis keluarga'],
-    fitur: ['WhatsApp', 'Google Maps', 'Produk / layanan', 'Kontak'],
+    untuk: ['Toko', 'Restoran', 'Penyedia jasa', 'Toko Online/offline', 'Usaha Travel'],
+    fitur: ['WhatsApp', 'Google Maps', 'Produk / layanan', 'Kontak', 'Dan masih banyak lagi'],
   },
   {
     id: '02',
     icon: Building2,
     label: 'COMPANY PROFILE',
     untuk: ['Perusahaan', 'Agency', 'Startup', 'Organisasi'],
-    fitur: ['Tentang perusahaan', 'Layanan', 'Portfolio', 'Team', 'Contact'],
+    fitur: ['Tentang perusahaan', 'Layanan', 'Portfolio', 'Team', 'Contact', 'Dan masih banyak lagi'],
   },
   {
     id: '03',
     icon: Briefcase,
     label: 'PORTFOLIO',
     untuk: ['Freelancer', 'Kreator', 'Designer', 'Developer', 'Profesional'],
-    fitur: ['Project', 'Skill', 'About', 'Contact', 'Social media'],
+    fitur: ['Project', 'Skill', 'About', 'Contact', 'Social media', 'Dan masih banyak lagi'],
   },
   {
     id: '04',
     icon: HeartHandshake,
     label: 'YAYASAN / ORGANISASI',
     untuk: ['Yayasan', 'Komunitas', 'Organisasi'],
-    fitur: ['Tentang', 'Program', 'Dokumentasi', 'Kontak', 'Donasi jika diperlukan'],
+    fitur: ['Tentang', 'Program', 'Dokumentasi', 'Kontak', 'Donasi jika diperlukan', 'Dan masih banyak lagi'],
   },
   {
     id: '05',
     icon: Rocket,
     label: 'LANDING PAGE',
     untuk: ['Produk', 'Campaign', 'Event', 'Marketing'],
-    fitur: ['Conversion', 'CTA', 'Copywriting', 'Product information'],
+    fitur: ['Conversion', 'CTA', 'Copywriting', 'Product information', 'Dan masih banyak lagi'],
     highlight: true,
   },
 ];
@@ -86,7 +86,7 @@ export default function Services() {
                 <div className="mb-3 flex items-center gap-2.5">
                   <div
                     className={`flex h-9 w-9 items-center justify-center rounded-lg transition-colors duration-300 ${
-                      isActive ? 'bg-[#3b82f6] text-white' : 'bg-[#3b82f6]/10 text-[#3b82f6] group-hover:bg-[#25D366]/15 group-hover:text-[#25D366]'
+                      isActive ? 'bg-[#3b82f6] text-white' : 'bg-[#3b82f6]/10 text-[#3b82f6] group-hover:bg-[#3b82f6]/20 group-hover:text-[#3b82f6]'
                     }`}
                   >
                     <Icon size={18} strokeWidth={1.8} />

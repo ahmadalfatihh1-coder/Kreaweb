@@ -32,14 +32,9 @@ const BENEFITS = [
     id: '05',
     icon: FileText,
     title: 'Bukan Sekadar Website Bagus',
-    description: 'Copywriting dan struktur disusun agar mudah dipahami calon pelanggan.',
+    description: 'Copywriting dibuat sebaik mungkin agar mudah dipahami calon pelanggan.',
   },
-  {
-    id: '06',
-    icon: Smartphone,
-    title: 'Nyaman di Semua Perangkat',
-    description: 'Tampil profesional di HP, tablet, dan desktop.',
-  },
+  
 ];
 
 export default function WhyKreaweb() {

@@ -27,24 +27,14 @@ const FEATURES = [
     description: 'Hubungkan website dengan Instagram, TikTok, dan platform lainnya.',
   },
   {
-    icon: Mail,
-    title: 'Email',
-    description: 'Sediakan jalur komunikasi profesional melalui email.',
-  },
-  {
-    icon: FormInput,
-    title: 'Contact Form',
-    description: 'Memudahkan calon pelanggan mengirim pertanyaan.',
-  },
-  {
     icon: Search,
     title: 'SEO Dasar',
-    description: 'Struktur dasar website dipersiapkan agar lebih mudah dipahami mesin pencari.',
+    description: 'Struktur dasar website dipersiapkan agar lebih mudah ditemukan di Google.',
   },
   {
     icon: Palette,
-    title: 'Custom Design',
-    description: 'Desain disesuaikan dengan identitas dan kebutuhan bisnis.',
+    title: 'Bebas Request',
+    description: 'Pelanggan adalah raja, seluruh desain dan fitur bisa di buat sesuai keinginan anda',
   },
 ];
 
