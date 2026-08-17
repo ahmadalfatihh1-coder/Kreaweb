@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="80%">
+      <stop offset="0%" stop-color="#2a1413"/>
+      <stop offset="55%" stop-color="#160b0b"/>
+      <stop offset="100%" stop-color="#0b0b0c"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c21f24" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#c21f24" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a2b24"/>
+      <stop offset="100%" stop-color="#1f1713"/>
+    </linearGradient>
+    <linearGradient id="rendang" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a3d2a"/>
+      <stop offset="100%" stop-color="#4a2118"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#glow)" opacity="0.7"/>
+  <circle cx="1180" cy="560" r="420" fill="url(#plate)"/>
+  <circle cx="1180" cy="560" r="390" fill="#241a15"/>
+  <ellipse cx="1120" cy="500" rx="150" ry="120" fill="url(#rendang)" opacity="0.9"/>
+  <ellipse cx="1210" cy="600" rx="165" ry="130" fill="url(#rendang)" opacity="0.95"/>
+  <ellipse cx="1270" cy="480" rx="140" ry="115" fill="url(#rendang)" opacity="0.85"/>
+  <ellipse cx="1030" cy="590" rx="120" ry="100" fill="url(#rendang)" opacity="0.8"/>
+  <ellipse cx="1310" cy="640" rx="110" ry="90" fill="url(#rendang)" opacity="0.75"/>
+  <g fill="#e0a35a" opacity="0.55">
+    <circle cx="1040" cy="470" r="8"/>
+    <circle cx="1160" cy="430" r="10"/>
+    <circle cx="1230" cy="550" r="9"/>
+    <circle cx="1340" cy="520" r="7"/>
+    <circle cx="1090" cy="640" r="11"/>
+    <circle cx="1260" cy="680" r="8"/>
+  </g>
+  <g fill="#7c3a1d" opacity="0.7">
+    <ellipse cx="980" cy="560" rx="60" ry="18" transform="rotate(-18 980 560)"/>
+    <ellipse cx="1350" cy="570" rx="55" ry="16" transform="rotate(14 1350 570)"/>
+    <ellipse cx="1160" cy="700" rx="70" ry="18" transform="rotate(-6 1160 700)"/>
+  </g>
+  <rect y="0" width="1920" height="220" fill="#0b0b0c" opacity="0"/>
+</svg>

@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
       colors: {
         accent: {
@@ -20,6 +21,22 @@ module.exports = {
         wa: {
           green: '#25D366',
           'green-dark': '#128C7E',
+        },
+        ink: {
+          DEFAULT: '#0b0b0c',
+          soft: '#141416',
+          raised: '#1b1b1e',
+          line: '#232326',
+        },
+        paper: {
+          DEFAULT: '#f4f1ec',
+          muted: '#a7a39c',
+          faint: '#6e6b66',
+        },
+        crimson: {
+          DEFAULT: '#a4161a',
+          bright: '#c21f24',
+          dark: '#7c1013',
         },
       },
       animation: {

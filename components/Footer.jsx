@@ -7,7 +7,7 @@ const NAV = [
   { label: 'Keunggulan', href: '#keunggulan' },
   { label: 'Proses', href: '#proses' },
   { label: 'FAQ', href: '#faq' },
-  { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Hasil Web', href: '#portfolio' },
   { label: 'Konsultasi', href: '#konsultasi' },
 ];
 

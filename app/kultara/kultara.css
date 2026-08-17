@@ -1,0 +1,233 @@
+/* ================================================
+   KULTARA — Foundation Design System
+   Kuliner Nusantara Khas Indonesia
+   Black × White × Deep Red • Cinematic • Editorial
+   ================================================ */
+
+:root {
+  --kultara-black: #0b0b0c;
+  --kultara-black-soft: #141416;
+  --kultara-black-raised: #1b1b1e;
+  --kultara-line: #232326;
+  --kultara-paper: #f4f1ec;
+  --kultara-paper-muted: #a7a39c;
+  --kultara-paper-faint: #6e6b66;
+  --kultara-crimson: #a4161a;
+  --kultara-crimson-bright: #c21f24;
+  --kultara-crimson-dark: #7c1013;
+  --kultara-container-max: 1280px;
+  --kultara-gutter: clamp(1.25rem, 4vw, 3rem);
+}
+
+.kultara {
+  background-color: var(--kultara-black);
+  color: var(--kultara-paper);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  max-width: 100vw;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.kultara *,
+.kultara *::before,
+.kultara *::after {
+  box-sizing: border-box;
+}
+
+.kultara ::selection {
+  background-color: var(--kultara-crimson);
+  color: #ffffff;
+}
+.kultara ::-moz-selection {
+  background-color: var(--kultara-crimson);
+  color: #ffffff;
+}
+
+/* ---------- Typography ---------- */
+.kultara h1,
+.kultara h2,
+.kultara h3,
+.kultara h4,
+.kultara h5,
+.kultara h6 {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 800;
+  line-height: 1.12;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.kultara p {
+  color: #f4f1ec;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.kultara a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- Layout / Spacing ---------- */
+.kultara .kultara-container {
+  width: 100%;
+  max-width: var(--kultara-container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--kultara-gutter);
+  padding-right: var(--kultara-gutter);
+}
+
+.kultara .kultara-section {
+  padding-top: clamp(4rem, 9vw, 7.5rem);
+  padding-bottom: clamp(4rem, 9vw, 7.5rem);
+}
+
+.kultara .kultara-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--kultara-crimson-bright);
+}
+
+.kultara .kultara-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 2rem;
+  height: 1px;
+  background-color: var(--kultara-crimson);
+}
+
+.kultara .kultara-rule {
+  height: 1px;
+  width: 100%;
+  background-color: var(--kultara-line);
+  border: none;
+}
+
+/* ---------- Buttons ---------- */
+.kultara .kultara-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.95rem 1.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: 9999px;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.kultara .kultara-btn-primary {
+  background-color: var(--kultara-crimson);
+  color: #ffffff;
+}
+
+.kultara .kultara-btn-primary:hover {
+  background-color: var(--kultara-crimson-bright);
+  box-shadow: 0 0 0 1px rgba(194, 31, 36, 0.25), 0 8px 30px rgba(164, 22, 26, 0.35);
+}
+
+.kultara .kultara-btn-ghost {
+  background-color: transparent;
+  color: var(--kultara-paper);
+  border-color: var(--kultara-line);
+}
+
+.kultara .kultara-btn-ghost:hover {
+  border-color: var(--kultara-crimson);
+  color: #ffffff;
+}
+
+.kultara .kultara-btn-wa {
+  background-color: #25D366;
+  color: #07120a;
+}
+
+.kultara .kultara-btn-wa:hover {
+  background-color: #20ba58;
+}
+
+.kultara .kultara-btn:focus-visible {
+  outline: 2px solid var(--kultara-crimson-bright);
+  outline-offset: 3px;
+}
+
+/* ---------- Focus ring ---------- */
+.kultara :focus-visible {
+  outline: 2px solid var(--kultara-crimson-bright);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---------- Animations ---------- */
+.kultara .anim-fade-in {
+  animation: kultaraFadeIn 0.9s ease-out both;
+}
+.kultara .anim-fade-up {
+  animation: kultaraFadeUp 0.9s ease-out both;
+}
+.kultara .anim-delay-100 { animation-delay: 0.1s; }
+.kultara .anim-delay-200 { animation-delay: 0.2s; }
+.kultara .anim-delay-300 { animation-delay: 0.3s; }
+.kultara .anim-delay-400 { animation-delay: 0.4s; }
+
+@keyframes kultaraFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes kultaraFadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Image reveal — subtle clip-path sweep */
+.kultara .reveal-image {
+  overflow: hidden;
+}
+.kultara .reveal-image img {
+  animation: kultaraImageReveal 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes kultaraImageReveal {
+  from { transform: scale(1.12); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Scroll reveal (driven by IntersectionObserver via .is-visible) */
+.kultara .reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+.kultara .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.kultara .reveal-d-100 { transition-delay: 0.1s; }
+.kultara .reveal-d-200 { transition-delay: 0.2s; }
+.kultara .reveal-d-300 { transition-delay: 0.3s; }
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .kultara *,
+  .kultara *::before,
+  .kultara *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

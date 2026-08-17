@@ -46,7 +46,7 @@ export default function Hero() {
                 href="#portfolio"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 bg-white px-7 py-3.5 text-[15px] font-semibold text-slate-700 transition-all duration-200 hover:border-slate-400 hover:text-[#0f172a] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
               >
-                Lihat Portfolio
+                Hasil Website Kami
                 <ArrowRight size={17} className="transition-transform duration-200 group-hover:translate-x-1" />
               </a>
             </div>

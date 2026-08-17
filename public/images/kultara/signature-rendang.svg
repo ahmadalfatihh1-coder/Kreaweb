@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="sig-bg" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#2e1512"/>
+      <stop offset="100%" stop-color="#0b0b0c"/>
+    </radialGradient>
+    <linearGradient id="sig-plate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a2b24"/>
+      <stop offset="100%" stop-color="#1c1410"/>
+    </linearGradient>
+    <linearGradient id="sig-rendang" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9a452e"/>
+      <stop offset="100%" stop-color="#4f2418"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#sig-bg)"/>
+  <circle cx="600" cy="600" r="430" fill="url(#sig-plate)"/>
+  <circle cx="600" cy="600" r="395" fill="#261c16"/>
+  <ellipse cx="540" cy="540" rx="170" ry="140" fill="url(#sig-rendang)"/>
+  <ellipse cx="650" cy="650" rx="180" ry="150" fill="url(#sig-rendang)"/>
+  <ellipse cx="700" cy="520" rx="145" ry="120" fill="url(#sig-rendang)" opacity="0.9"/>
+  <ellipse cx="470" cy="650" rx="130" ry="105" fill="url(#sig-rendang)" opacity="0.85"/>
+  <g fill="#e6a75c" opacity="0.6">
+    <circle cx="490" cy="510" r="9"/>
+    <circle cx="600" cy="470" r="11"/>
+    <circle cx="680" cy="590" r="10"/>
+    <circle cx="770" cy="560" r="8"/>
+    <circle cx="540" cy="690" r="12"/>
+    <circle cx="710" cy="720" r="9"/>
+  </g>
+  <g fill="#7c3a1d" opacity="0.75">
+    <ellipse cx="430" cy="610" rx="65" ry="19" transform="rotate(-16 430 610)"/>
+    <ellipse cx="780" cy="630" rx="60" ry="17" transform="rotate(12 780 630)"/>
+    <ellipse cx="600" cy="750" rx="75" ry="19" transform="rotate(-5 600 750)"/>
+  </g>
+</svg>
