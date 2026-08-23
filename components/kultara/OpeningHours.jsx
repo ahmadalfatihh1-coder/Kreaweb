@@ -4,10 +4,13 @@ import { useState, useEffect } from 'react';
 import { KULTARA_CONFIG } from './kultara-config';
 
 function getJakartaHour() {
-  // WIB = UTC+7
-  const now = new Date();
-  const jakartaTime = new Date(now.getTime() + 7 * 60 * 60 * 1000);
-  return jakartaTime.getUTCHours();
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Jakarta',
+    hour: 'numeric',
+    hour12: false,
+  }).formatToParts(new Date());
+  const hour = parts.find((part) => part.type === 'hour');
+  return hour ? parseInt(hour.value, 10) : new Date().getHours();
 }
 
 export default function OpeningHours() {

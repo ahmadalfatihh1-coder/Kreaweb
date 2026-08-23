@@ -5,14 +5,37 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function GaleriLightbox({ images, index, onClose, onNavigate }) {
   const touchStartX = useRef(null);
+  const containerRef = useRef(null);
+  const closeRef = useRef(null);
+  const prevFocusRef = useRef(null);
 
   useEffect(() => {
     if (index === null) return;
+
+    prevFocusRef.current = document.activeElement;
+    closeRef.current?.focus();
 
     const handleKey = (event) => {
       if (event.key === 'Escape') onClose();
       if (event.key === 'ArrowRight') onNavigate(index + 1);
       if (event.key === 'ArrowLeft') onNavigate(index - 1);
+
+      // Simple focus trap: keep Tab within the lightbox
+      if (event.key === 'Tab' && containerRef.current) {
+        const focusable = containerRef.current.querySelectorAll(
+          'button, a[href], [tabindex]:not([tabindex="-1"])'
+        );
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
     };
 
     document.addEventListener('keydown', handleKey);
@@ -21,6 +44,7 @@ export default function GaleriLightbox({ images, index, onClose, onNavigate }) {
     return () => {
       document.removeEventListener('keydown', handleKey);
       document.body.style.overflow = '';
+      prevFocusRef.current?.focus?.();
     };
   }, [index, onClose, onNavigate]);
 
@@ -45,6 +69,7 @@ export default function GaleriLightbox({ images, index, onClose, onNavigate }) {
 
   return (
     <div
+      ref={containerRef}
       className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 sm:p-6"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
@@ -58,6 +83,7 @@ export default function GaleriLightbox({ images, index, onClose, onNavigate }) {
 
       {/* Close */}
       <button
+        ref={closeRef}
         type="button"
         onClick={onClose}
         aria-label="Tutup"

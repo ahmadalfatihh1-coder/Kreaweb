@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ['class', '.kreaweb-dark'],
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,6 +10,7 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
         display: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        'archivo-black': ['"Archivo Black"', 'Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
         accent: {
@@ -23,15 +25,15 @@ module.exports = {
           'green-dark': '#128C7E',
         },
         ink: {
-          DEFAULT: '#0b0b0c',
-          soft: '#141416',
-          raised: '#1b1b1e',
-          line: '#232326',
+          DEFAULT: 'rgb(var(--kt-ink) / <alpha-value>)',
+          soft: 'rgb(var(--kt-ink-soft) / <alpha-value>)',
+          raised: 'rgb(var(--kt-ink-raised) / <alpha-value>)',
+          line: 'rgb(var(--kt-ink-line) / <alpha-value>)',
         },
         paper: {
-          DEFAULT: '#f4f1ec',
-          muted: '#a7a39c',
-          faint: '#6e6b66',
+          DEFAULT: 'rgb(var(--kt-paper) / <alpha-value>)',
+          muted: 'rgb(var(--kt-paper-muted) / <alpha-value>)',
+          faint: 'rgb(var(--kt-paper-faint) / <alpha-value>)',
         },
         crimson: {
           DEFAULT: '#a4161a',

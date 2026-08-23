@@ -2,14 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import { waLink } from './kultara-config';
 
 const NAV_LINKS = [
   { label: 'Beranda', href: '/kultara' },
   { label: 'Tentang', href: '/kultara#tentang' },
   { label: 'Menu', href: '/kultara#menu' },
-  { label: 'Kisah Kultara', href: '/kultara#kisah' },
   { label: 'Galeri', href: '/kultara#galeri' },
   { label: 'FAQ', href: '/kultara#faq' },
   { label: 'Kontak', href: '/kultara/kontak' },
@@ -20,6 +19,7 @@ const CUSTOMER_SERVICE_URL = waLink('Halo Kultara, saya ingin bertanya.');
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 16);
@@ -37,19 +37,34 @@ export default function Navbar() {
 
   const closeMobile = () => setMobileOpen(false);
 
+  useEffect(() => {
+    const saved = localStorage.getItem('kultara-theme') || 'light';
+    setTheme(saved);
+    document.documentElement.classList.toggle('kultara-dark', saved === 'dark');
+  }, []);
+
+  const toggleTheme = () => {
+    setTheme((prev) => {
+      const next = prev === 'light' ? 'dark' : 'light';
+      localStorage.setItem('kultara-theme', next);
+      document.documentElement.classList.toggle('kultara-dark', next === 'dark');
+      return next;
+    });
+  };
+
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 border-b-2 transition-all duration-300 ${
           scrolled
-            ? 'border-ink-line bg-black/80 backdrop-blur-md'
+            ? 'border-ink-line bg-ink/80 backdrop-blur-md'
             : 'border-ink-line/40 bg-transparent'
         }`}
       >
-        <nav className="mx-auto flex h-[72px] max-w-[1280px] items-center justify-between px-5 md:px-8 lg:px-10">
+        <nav className="mx-auto flex h-[56px] max-w-[1280px] items-center gap-3 px-5 md:px-8 lg:px-10">
           <Link
             href="/kultara"
-            className="flex flex-col leading-none no-underline"
+            className="mr-auto flex items-center no-underline"
             onClick={closeMobile}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -59,17 +74,14 @@ export default function Navbar() {
               loading="eager"
               className="h-[40px] w-auto object-contain"
             />
-            <span className="mt-1 text-[10px] uppercase tracking-[0.32em] text-white/70">
-              Kuliner Nusantara
-            </span>
           </Link>
 
-          <div className="hidden items-center gap-7 lg:flex">
+          <div className="hidden items-center lg:flex lg:divide-x lg:divide-ink-line">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[14px] font-medium text-paper-muted transition-colors duration-200 hover:text-paper"
+                className="px-4 first:pl-0 text-[14px] font-medium text-paper-muted transition-colors duration-200 hover:text-paper"
               >
                 {link.label}
               </Link>
@@ -78,11 +90,20 @@ export default function Navbar() {
               href={CUSTOMER_SERVICE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[14px] font-semibold text-crimson-bright transition-colors duration-200 hover:text-crimson"
+              className="pl-4 text-[14px] font-semibold text-crimson-bright transition-colors duration-200 hover:text-crimson"
             >
               Hubungi Kultara
             </a>
           </div>
+
+          <button
+            type="button"
+            onClick={toggleTheme}
+            aria-label={theme === 'light' ? 'Aktifkan mode gelap' : 'Aktifkan mode terang'}
+            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-ink-line text-paper transition-colors hover:border-crimson/60"
+          >
+            {theme === 'light' ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
 
           <button
             onClick={() => setMobileOpen((prev) => !prev)}
@@ -115,7 +136,7 @@ export default function Navbar() {
               alt="Kultara"
               className="h-[32px] w-auto object-contain"
             />
-            <span className="mt-1 text-[9px] uppercase tracking-[0.3em] text-white/70">
+            <span className="mt-1 text-[9px] uppercase tracking-[0.3em] text-paper-faint">
               Kuliner Nusantara
             </span>
           </div>
@@ -128,17 +149,19 @@ export default function Navbar() {
           </button>
         </div>
 
-        <nav className="flex flex-col gap-1 px-4 pt-5">
+        <nav className="flex flex-col px-4 pt-5">
+          <div className="divide-y divide-ink-line">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={closeMobile}
-              className="rounded-lg px-4 py-3.5 text-[16px] font-medium text-paper-muted transition-colors hover:bg-ink-raised hover:text-paper"
+              className="block rounded-lg px-4 py-3.5 text-[16px] font-medium text-paper-muted transition-colors hover:bg-ink-raised hover:text-paper"
             >
               {link.label}
             </Link>
           ))}
+          </div>
 
           <a
             href={CUSTOMER_SERVICE_URL}

@@ -3,7 +3,6 @@ import TrustIndicator from '../../components/kultara/TrustIndicator';
 import BrandIntro from '../../components/kultara/BrandIntro';
 import SignatureDish from '../../components/kultara/SignatureDish';
 import MenuSection from '../../components/kultara/MenuSection';
-import KisahSection from '../../components/kultara/KisahSection';
 import GaleriSection from '../../components/kultara/GaleriSection';
 import InstagramSection from '../../components/kultara/InstagramSection';
 import FaqSection from '../../components/kultara/FaqSection';
@@ -18,7 +17,6 @@ export default function KultaraHome() {
       <BrandIntro />
       <SignatureDish />
       <MenuSection />
-      <KisahSection />
       <GaleriSection />
       <InstagramSection />
       <FaqSection />

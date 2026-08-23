@@ -72,13 +72,13 @@ export default function MenuModal({ item, onClose }) {
           <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-crimson-bright">
             {item.category}
           </span>
-          <h3 className="mt-2 font-display text-3xl font-extrabold text-white">
+          <h3 className="mt-2 font-display text-3xl font-extrabold text-paper">
             {item.name}
           </h3>
           <div className="mt-2 text-2xl font-bold text-paper">
             {formatRupiah(item.price)}
           </div>
-          <p className="mt-4 text-base leading-relaxed text-white/75">
+          <p className="mt-4 text-base leading-relaxed text-paper-muted">
             {item.description}
           </p>
 

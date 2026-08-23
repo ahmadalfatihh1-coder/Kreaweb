@@ -5,7 +5,7 @@ export default function SignatureDish() {
     <section className="kultara-section overflow-hidden bg-ink-soft/30">
       <div className="kultara-container">
         <Reveal className="mb-14">
-          <h2 className="max-w-2xl font-display text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-5xl">
+          <h2 className="max-w-2xl font-display text-3xl font-extrabold leading-tight text-paper sm:text-4xl md:text-5xl">
             Hidangan yang Menjadi Identitas Kami
           </h2>
         </Reveal>
@@ -27,13 +27,13 @@ export default function SignatureDish() {
           </Reveal>
 
           <Reveal delay={150} className="lg:col-span-5">
-            <h3 className="font-display text-4xl font-extrabold text-white sm:text-5xl">
+            <h3 className="font-display text-4xl font-extrabold text-paper sm:text-5xl">
               Rendang Daging
             </h3>
             <div className="mt-5 text-2xl font-semibold text-crimson-bright md:text-3xl">
               Rp 48.000
             </div>
-            <p className="mt-10 text-base leading-relaxed text-white/90 md:text-lg">
+            <p className="mt-10 text-base leading-relaxed text-paper-muted md:text-lg">
               Daging sapi pilihan yang dimasak perlahan bersama rempah Nusantara hingga
               bumbu meresap sempurna. Kaya rasa, lembut, dan menjadi salah satu hidangan
               yang paling menggambarkan karakter Kultara.

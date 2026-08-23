@@ -6,43 +6,43 @@ import GaleriLightbox from './GaleriLightbox';
 
 const GALLERY = [
   {
-    src: 'https://images.unsplash.com/photo-1548940740-204726a19be3?auto=format&fit=crop&w=900&q=80',
-    alt: 'Hidangan Nusantara di meja Kultara',
-    span: 'tall',
-  },
-  {
     src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80',
-    alt: 'Suasana interior restoran Kultara',
-    span: 'normal',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80',
-    alt: 'Koki Kultara sedang memasak di dapur',
-    span: 'normal',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80',
-    alt: 'Sajian makanan khas Indonesia',
+    alt: 'Interior restoran Kultara dengan pencahayaan hangat',
     span: 'tall',
   },
   {
-    src: 'https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?auto=format&fit=crop&w=900&q=80',
-    alt: 'Rempah dan bahan masakan Nusantara',
+    src: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80',
+    alt: 'Area makan restoran bertema kayu hangat',
     span: 'normal',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80',
+    alt: 'Penataan meja makan bernuansa hangat Kultara',
+    span: 'normal',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80',
+    alt: 'Tempat duduk restoran Kultara yang nyaman',
+    span: 'tall',
   },
   {
     src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80',
-    alt: 'Restoran Kultara dengan pencahayaan hangat',
+    alt: 'Suasana fine dining Kultara yang hangat',
     span: 'normal',
   },
   {
-    src: 'https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=900&q=80',
-    alt: 'Pelanggan menikmati hidangan Kultara',
+    src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80',
+    alt: 'Ruang makan Kultara dengan dekorasi kayu',
     span: 'normal',
   },
   {
-    src: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=80',
-    alt: 'Hidangan laut bakar khas Kultara',
+    src: 'https://images.unsplash.com/photo-1560624052-449f5ddf0c31?auto=format&fit=crop&w=900&q=80',
+    alt: 'Sudut nyaman restoran Kultara',
+    span: 'normal',
+  },
+  {
+    src: 'https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=900&q=80',
+    alt: 'Area duduk restoran Kultara',
     span: 'tall',
   },
 ];
@@ -62,7 +62,7 @@ export default function GaleriSection() {
     <section id="galeri" className="kultara-section scroll-mt-24 overflow-hidden">
       <div className="kultara-container">
         <Reveal className="mb-12">
-          <h2 className="max-w-2xl font-display text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-5xl">
+          <h2 className="max-w-2xl font-display text-3xl font-extrabold leading-tight text-paper sm:text-4xl md:text-5xl">
             Suasana di Kultara
           </h2>
         </Reveal>
@@ -81,11 +81,12 @@ export default function GaleriSection() {
                   src={item.src}
                   alt={item.alt}
                   loading="lazy"
-                  className={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${
+                  className={`w-full object-cover transition-transform duration-500 sepia-[0.18] saturate-[1.15] group-hover:scale-105 ${
                     item.span === 'tall' ? 'aspect-[3/4]' : 'aspect-square'
                   }`}
                 />
-                <span className="pointer-events-none absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/20" />
+                <span className="pointer-events-none absolute inset-0 bg-gradient-to-tl from-[#3a2917]/35 via-[#8a5a32]/15 to-[#f3ead8]/30" />
+                <span className="pointer-events-none absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/25" />
               </button>
             </Reveal>
           ))}

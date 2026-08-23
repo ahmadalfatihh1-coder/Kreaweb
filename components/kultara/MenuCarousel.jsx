@@ -288,7 +288,7 @@ export default function MenuCarousel() {
                       <h3 className="mt-2 font-display text-2xl font-extrabold leading-tight text-white">
                         {item.name}
                       </h3>
-                      <div className="mt-1 text-xl font-bold text-paper">
+                      <div className="mt-1 text-xl font-bold text-white">
                         {formatRupiah(item.price)}
                       </div>
                     </div>
@@ -302,7 +302,7 @@ export default function MenuCarousel() {
             type="button"
             onClick={() => navigate(activeIndex - 1)}
             aria-label="Menu sebelumnya"
-            className="absolute left-2 top-1/2 z-30 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-ink-line bg-black/50 text-paper backdrop-blur transition-colors hover:border-crimson/60 hover:text-white active:border-crimson active:bg-crimson active:text-white sm:left-5"
+            className="absolute left-2 top-1/2 z-30 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/50 text-white backdrop-blur transition-colors hover:border-crimson/60 hover:text-white active:border-crimson active:bg-crimson active:text-white sm:left-5"
           >
             <ChevronLeft size={20} />
           </button>
@@ -310,7 +310,7 @@ export default function MenuCarousel() {
             type="button"
             onClick={() => navigate(activeIndex + 1)}
             aria-label="Menu berikutnya"
-            className="absolute right-2 top-1/2 z-30 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-ink-line bg-black/50 text-paper backdrop-blur transition-colors hover:border-crimson/60 hover:text-white active:border-crimson active:bg-crimson active:text-white sm:right-5"
+            className="absolute right-2 top-1/2 z-30 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/50 text-white backdrop-blur transition-colors hover:border-crimson/60 hover:text-white active:border-crimson active:bg-crimson active:text-white sm:right-5"
           >
             <ChevronRight size={20} />
           </button>

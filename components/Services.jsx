@@ -9,35 +9,35 @@ const CATEGORIES = [
     icon: Store,
     label: 'WEBSITE UMKM',
     untuk: ['Toko', 'Restoran', 'Penyedia jasa', 'Toko Online/offline', 'Usaha Travel'],
-    fitur: ['WhatsApp', 'Google Maps', 'Produk / layanan', 'Kontak', 'Dan masih banyak lagi'],
+    fitur: ['WhatsApp', 'Google Maps', 'Produk / layanan', 'Kontak'],
   },
   {
     id: '02',
     icon: Building2,
     label: 'COMPANY PROFILE',
     untuk: ['Perusahaan', 'Agency', 'Startup', 'Organisasi'],
-    fitur: ['Tentang perusahaan', 'Layanan', 'Portfolio', 'Team', 'Contact', 'Dan masih banyak lagi'],
+    fitur: ['Tentang perusahaan', 'Layanan', 'Portfolio', 'Team', 'Contact'],
   },
   {
     id: '03',
     icon: Briefcase,
     label: 'PORTFOLIO',
     untuk: ['Freelancer', 'Kreator', 'Designer', 'Developer', 'Profesional'],
-    fitur: ['Project', 'Skill', 'About', 'Contact', 'Social media', 'Dan masih banyak lagi'],
+    fitur: ['Project', 'Skill', 'About', 'Contact', 'Social media'],
   },
   {
     id: '04',
     icon: HeartHandshake,
     label: 'YAYASAN / ORGANISASI',
     untuk: ['Yayasan', 'Komunitas', 'Organisasi'],
-    fitur: ['Tentang', 'Program', 'Dokumentasi', 'Kontak', 'Donasi jika diperlukan', 'Dan masih banyak lagi'],
+    fitur: ['Tentang', 'Program', 'Dokumentasi', 'Kontak', 'Donasi jika diperlukan'],
   },
   {
     id: '05',
     icon: Rocket,
     label: 'LANDING PAGE',
     untuk: ['Produk', 'Campaign', 'Event', 'Marketing'],
-    fitur: ['Conversion', 'CTA', 'Copywriting', 'Product information', 'Dan masih banyak lagi'],
+    fitur: ['Conversion', 'CTA', 'Copywriting', 'Product information'],
     highlight: true,
   },
 ];
@@ -46,13 +46,13 @@ export default function Services() {
   const [active, setActive] = useState(null);
 
   return (
-    <section id="layanan" className="bg-white py-16 md:py-24">
+    <section id="layanan" className="bg-white py-16 md:py-24 dark:bg-[#0b1220]">
       <div className="mx-auto max-w-[1280px] px-5 md:px-8 lg:px-10">
-        <div className="mx-auto mb-10 max-w-[640px] text-center md:mb-14">
-          <h2 className="text-[26px] font-bold leading-[1.2] text-[#0f172a] sm:text-[32px] md:text-[38px]">
+        <div className="mx-auto mb-10 max-w-[760px] text-center md:mb-14">
+          <h2 className="text-[32px] font-bold leading-[1.2] text-[#0f172a] sm:text-[40px] md:text-[48px] dark:text-white">
             Website untuk berbagai kebutuhan bisnis.
           </h2>
-          <p className="mt-4 text-[15px] leading-relaxed text-slate-500 md:text-[16px]">
+          <p className="mt-4 text-[15px] leading-relaxed text-slate-500 md:text-[16px] dark:text-slate-400">
             Desain dan fitur disesuaikan dengan kebutuhan bisnis Anda.
           </p>
         </div>
@@ -78,31 +78,34 @@ export default function Services() {
                 className={`group cursor-pointer rounded-2xl border p-5 transition-all duration-300 ${
                   isActive
                     ? 'border-[#3b82f6] bg-[#e0edff] shadow-[0_4px_20px_rgba(59,130,246,0.15)] ring-1 ring-[#3b82f6]/30'
-                    : 'border-slate-200 bg-white hover:border-[#3b82f6] hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)] hover:-translate-y-0.5'
+                    : 'border-slate-200 bg-white hover:border-[#3b82f6] hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)] hover:-translate-y-0.5 dark:border-slate-800 dark:bg-[#111a2e]'
                 }`}
                 style={{ animationDelay: `${i * 0.06}s` }}
               >
                 {/* Header */}
-                <div className="mb-3 flex items-center gap-2.5">
-                  <div
-                    className={`flex h-9 w-9 items-center justify-center rounded-lg transition-colors duration-300 ${
-                      isActive ? 'bg-[#3b82f6] text-white' : 'bg-[#3b82f6]/10 text-[#3b82f6] group-hover:bg-[#3b82f6]/20 group-hover:text-[#3b82f6]'
-                    }`}
-                  >
-                    <Icon size={18} strokeWidth={1.8} />
+                <div className="mb-3 flex items-start justify-between gap-2.5">
+                  <div className="flex items-center gap-2.5">
+                    <div className="text-[#3b82f6]">
+                      <Icon size={24} strokeWidth={1.8} />
+                    </div>
+                    <div>
+                      <span
+                        className={`text-[11px] font-semibold tracking-wider transition-colors ${
+                          isActive ? 'text-[#3b82f6]' : 'text-[#3b82f6]/50'
+                        }`}
+                      >
+                        {cat.id}
+                      </span>
+                      <p className="text-[14px] font-semibold leading-tight text-[#0f172a] dark:text-white">
+                        {cat.label}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <span
-                      className={`text-[11px] font-semibold tracking-wider transition-colors ${
-                        isActive ? 'text-[#3b82f6]' : 'text-[#3b82f6]/50'
-                      }`}
-                    >
-                      {cat.id}
+                  {i === 0 && (
+                    <span className="text-[11px] font-medium text-[#3b82f6]">
+                      Ketuk untuk detail
                     </span>
-                    <p className="text-[14px] font-semibold leading-tight text-[#0f172a]">
-                      {cat.label}
-                    </p>
-                  </div>
+                  )}
                 </div>
 
                 {/* Content — always visible compact, expand on active */}
@@ -120,7 +123,7 @@ export default function Services() {
                         {cat.untuk.map((u) => (
                           <li
                             key={u}
-                            className="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] text-slate-500"
+                            className="rounded-full border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] text-slate-500 dark:border-slate-700 dark:bg-[#1a2338] dark:text-slate-300"
                           >
                             {u}
                           </li>
@@ -136,7 +139,7 @@ export default function Services() {
                         {cat.fitur.map((f) => (
                           <li
                             key={f}
-                            className="rounded-full bg-slate-50 px-2.5 py-0.5 text-[11px] text-slate-600"
+                            className="rounded-full bg-slate-50 px-2.5 py-0.5 text-[11px] text-slate-600 dark:bg-[#1a2338] dark:text-slate-300"
                           >
                             {f}
                           </li>

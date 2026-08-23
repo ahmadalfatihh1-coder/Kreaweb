@@ -18,10 +18,10 @@ export default function PrivateEventSection() {
       <div className="kultara-container">
         <Reveal className="flex flex-col items-start gap-10 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
-            <h2 className="font-display text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-5xl">
+            <h2 className="font-display text-3xl font-extrabold leading-tight text-paper sm:text-4xl md:text-5xl">
               Rayakan Momen Bersama Kultara
             </h2>
-            <p className="mt-6 text-white/80">
+            <p className="mt-6 text-paper-muted">
               Untuk momen istimewa bersama orang terdekat, Kultara siap menjadi tempat
               berkumpul yang hangat.
             </p>
@@ -42,7 +42,7 @@ export default function PrivateEventSection() {
             {EVENT_TYPES.map((item) => (
               <span
                 key={item}
-                className="inline-flex items-center rounded-full border border-ink-line px-5 py-2.5 text-sm text-white/80"
+                className="inline-flex items-center rounded-full border border-ink-line px-5 py-2.5 text-sm text-paper-muted"
               >
                 {item}
               </span>

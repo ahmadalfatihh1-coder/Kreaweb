@@ -23,7 +23,7 @@ export default function FloatingActions() {
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Kembali ke atas"
-          className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-ink-line bg-ink-soft text-white shadow-lg transition-colors hover:border-crimson"
+          className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-ink-line bg-ink-soft text-paper shadow-lg transition-colors hover:border-crimson"
         >
           <ArrowUp size={20} />
         </button>

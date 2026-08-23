@@ -32,6 +32,11 @@ body {
   max-width: 100vw;
 }
 
+html.kreaweb-dark body {
+  background-color: #0b1220;
+  color: #e2e8f0;
+}
+
 ::selection {
   background-color: #1e3a5f;
   color: #ffffff;

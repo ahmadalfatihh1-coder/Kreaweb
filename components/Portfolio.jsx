@@ -11,23 +11,23 @@ const FEATURES = [
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="scroll-mt-24 bg-white py-16 md:py-24">
+    <section id="portfolio" className="scroll-mt-24 bg-white py-16 md:py-24 dark:bg-[#0b1220]">
       <div className="mx-auto max-w-[1280px] px-5 md:px-8 lg:px-10">
-        <div className="mx-auto max-w-[680px] text-center">
-          <span className="inline-flex items-center gap-2 rounded-full bg-accent-brightsoft px-4 py-1.5 text-[13px] font-semibold text-accent">
+        <div className="mx-auto max-w-[760px] text-center">
+          <span className="inline-flex items-center gap-2 rounded-full bg-accent-brightsoft px-4 py-1.5 text-[15px] font-semibold text-accent sm:text-[16px]">
             Hasil Website Kami
           </span>
-          <h2 className="mt-4 text-[28px] font-extrabold leading-[1.2] tracking-tight text-[#0f172a] sm:text-[34px] md:text-[40px]">
-            Lihat hasil nyata yang bisa kami buat untuk bisnis kamu.
+          <h2 className="mt-4 text-[32px] font-extrabold leading-[1.2] tracking-tight text-[#0f172a] sm:text-[40px] md:text-[48px] dark:text-white">
+            Lihat hasil nyata yang bisa kami buat untuk bisnis Anda.
           </h2>
-          <p className="mt-4 text-[16px] leading-relaxed text-slate-500">
+          <p className="mt-4 text-[16px] leading-relaxed text-slate-500 dark:text-slate-400">
             Beberapa contoh konsep website dummy yang kami bangun untuk berbagai jenis usaha.
           </p>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* ===== Card 1 — KULTARA (active) ===== */}
-          <article className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_10px_40px_-20px_rgba(15,42,74,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_20px_50px_-20px_rgba(15,42,74,0.28)]">
+          <article className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_10px_40px_-20px_rgba(15,42,74,0.18)] transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_20px_50px_-20px_rgba(15,42,74,0.28)] dark:border-slate-800 dark:bg-[#111a2e] dark:hover:border-slate-600">
             {/* Preview — Kultara dark mockup */}
             <div className="relative bg-[#0b0b0c] p-4">
               <div className="flex items-center gap-1.5 pb-3">
@@ -68,12 +68,12 @@ export default function Portfolio() {
             {/* Content */}
             <div className="flex flex-1 flex-col p-6">
               <div className="flex items-center justify-between">
-                <h3 className="text-[20px] font-bold text-[#0f172a]">KULTARA</h3>
+                <h3 className="text-[20px] font-bold text-[#0f172a] dark:text-white">KULTARA</h3>
                 <span className="rounded-full bg-[#fdecec] px-3 py-1 text-[11px] font-semibold text-[#a4161a]">
                   Restoran
                 </span>
               </div>
-              <p className="mt-2 text-[14px] leading-relaxed text-slate-500">
+              <p className="mt-2 text-[14px] leading-relaxed text-slate-500 dark:text-slate-400">
                 Website restoran premium dengan tema hitam, putih, dan deep red yang
                 sinematik. Menonjolkan menu, harga, lokasi, dan order via WhatsApp.
               </p>
@@ -82,7 +82,7 @@ export default function Portfolio() {
                 {FEATURES.map((feature) => (
                   <li
                     key={feature}
-                    className="rounded-full bg-slate-100 px-3 py-1 text-[12px] font-medium text-slate-600"
+                    className="rounded-full bg-slate-100 px-3 py-1 text-[12px] font-medium text-slate-600 dark:bg-[#1a2338] dark:text-slate-300"
                   >
                     {feature}
                   </li>
@@ -111,14 +111,14 @@ export default function Portfolio() {
           ].map((item, index) => (
             <article
               key={index}
-              className="flex flex-col overflow-hidden rounded-2xl border border-dashed border-slate-300 bg-slate-50"
+              className="flex flex-col overflow-hidden rounded-2xl border border-dashed border-slate-300 bg-slate-50 dark:border-slate-700 dark:bg-[#111a2e]"
             >
               <div className="flex min-h-[220px] flex-col items-center justify-center gap-3 p-6">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-200 text-slate-400">
                   <Eye size={22} />
                 </div>
-                <span className="text-[15px] font-semibold text-slate-500">{item.label}</span>
-                <span className="text-center text-[13px] leading-relaxed text-slate-400">
+                <span className="text-[15px] font-semibold text-slate-500 dark:text-slate-300">{item.label}</span>
+                <span className="text-center text-[13px] leading-relaxed text-slate-400 dark:text-slate-500">
                   {item.note}
                 </span>
               </div>

@@ -17,7 +17,7 @@ export default function TrustIndicator() {
               <div className="flex h-24 w-24 items-center justify-center rounded-full bg-crimson font-display text-2xl font-extrabold text-white md:h-28 md:w-28 md:text-3xl">
                 {item.value}
               </div>
-              <div className="text-[12px] uppercase tracking-[0.18em] text-white/70 md:text-[13px]">
+              <div className="text-[12px] uppercase tracking-[0.18em] text-paper-muted md:text-[13px]">
                 {item.label}
               </div>
             </div>

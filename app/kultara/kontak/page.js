@@ -4,15 +4,22 @@ import { KULTARA_CONFIG, waLink } from '../../../components/kultara/kultara-conf
 
 const CUSTOMER_SERVICE_URL = waLink('Halo Kultara, saya ingin bertanya.');
 
+export const metadata = {
+  metadataBase: new URL('https://kreaweb.id'),
+  title: 'Kontak & Lokasi KULTARA — Kuliner Nusantara',
+  description:
+    'Temukan lokasi, jam operasional, dan cara menghubungi KULTARA di Jakarta untuk menikmati sajian kuliner Nusantara.',
+  alternates: {
+    canonical: '/kultara/kontak',
+  },
+};
+
 export default function Kontak() {
   const {
     alamat,
     telepon,
-    instagramUrl,
-    tiktokUrl,
     gofoodUrl,
     grabfoodUrl,
-    googleMapsUrl,
     mapsEmbedUrl,
     hariLabel,
     jamBuka,
@@ -30,21 +37,21 @@ export default function Kontak() {
       <section className="kultara-section pt-0">
         <div className="kultara-container grid gap-10 lg:grid-cols-2">
           <div>
-            <h2 className="font-display text-2xl font-extrabold text-white md:text-3xl">
+            <h2 className="font-display text-2xl font-extrabold text-paper md:text-3xl">
               Kultara — Kuliner Nusantara
             </h2>
 
-            <p className="mt-6 text-base leading-relaxed text-white/80">{alamat}</p>
-            <p className="mt-2 text-base text-white/80">Telepon: {telepon}</p>
+            <p className="mt-6 text-base leading-relaxed text-paper-muted">{alamat}</p>
+            <p className="mt-2 text-base text-paper-muted">Telepon: {telepon}</p>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <OpeningHours />
-              <span className="text-sm text-white/70">
+              <span className="text-sm text-paper-muted">
                 {hariLabel} • {jamBuka}–{jamTutup}
               </span>
             </div>
 
-            <p className="mt-4 text-sm text-white/60">{parkingInfo}</p>
+            <p className="mt-4 text-sm text-paper-faint">{parkingInfo}</p>
 
             <a
               href={CUSTOMER_SERVICE_URL}
@@ -56,7 +63,7 @@ export default function Kontak() {
             </a>
 
             <div className="mt-8">
-              <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">
+              <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-paper-faint">
                 Pesan Antar
               </h3>
               <div className="mt-3 flex flex-wrap gap-3">
@@ -99,37 +106,6 @@ export default function Kontak() {
               </div>
             </div>
 
-            <div className="mt-8">
-              <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">
-                Social Media
-              </h3>
-              <div className="mt-3 flex flex-wrap gap-3">
-                <a
-                  href={instagramUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-white/80 hover:text-white"
-                >
-                  Instagram →
-                </a>
-                <a
-                  href={tiktokUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-white/80 hover:text-white"
-                >
-                  TikTok →
-                </a>
-                <a
-                  href={googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-white/80 hover:text-white"
-                >
-                  Google Maps →
-                </a>
-              </div>
-            </div>
           </div>
 
           <div className="min-h-[360px] overflow-hidden rounded-sm border border-ink-line">

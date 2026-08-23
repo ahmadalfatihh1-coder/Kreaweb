@@ -3,12 +3,14 @@
 import { MessageCircle, Instagram, Music2, Mail } from 'lucide-react';
 
 const NAV = [
-  { label: 'Home', href: '#' },
+  { label: 'Beranda', href: '#beranda' },
   { label: 'Keunggulan', href: '#keunggulan' },
+  { label: 'Investasi', href: '#investasi' },
+  { label: 'Layanan', href: '#layanan' },
+  { label: 'Hasil Web', href: '#portfolio' },
+  { label: 'Fitur', href: '#fitur' },
   { label: 'Proses', href: '#proses' },
   { label: 'FAQ', href: '#faq' },
-  { label: 'Hasil Web', href: '#portfolio' },
-  { label: 'Konsultasi', href: '#konsultasi' },
 ];
 
 export default function Footer() {
@@ -23,10 +25,13 @@ export default function Footer() {
           {/* Brand + Tagline */}
           <div className="max-w-[320px]">
             <a href="#" className="flex items-center gap-2 text-xl font-bold tracking-tight text-white no-underline">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-sm font-bold text-white">
-                K
-              </span>
-              KreaWeb
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/kreweb-logo.svg"
+                alt="Kreaweb"
+                className="h-8 w-auto"
+              />
+              Kreaweb
             </a>
             <p className="mt-3 text-[14px] leading-relaxed text-slate-400">
               Website profesional untuk membantu bisnis tumbuh di era digital.
@@ -89,7 +94,7 @@ export default function Footer() {
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram KreaWeb"
+                aria-label="Instagram Kreaweb"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-300 transition-colors duration-200 hover:border-slate-500 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 <Instagram size={16} />
@@ -98,14 +103,14 @@ export default function Footer() {
                 href="https://www.tiktok.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="TikTok KreaWeb"
+                aria-label="TikTok Kreaweb"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-300 transition-colors duration-200 hover:border-slate-500 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 <Music2 size={16} />
               </a>
               <a
                 href="mailto:halo@kreaweb.com"
-                aria-label="Email KreaWeb"
+                aria-label="Email Kreaweb"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-300 transition-colors duration-200 hover:border-slate-500 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 <Mail size={16} />
@@ -117,7 +122,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-10 border-t border-slate-800 pt-6">
           <p className="text-center text-[12px] text-slate-500 md:text-[13px]">
-            © 2026 KreaWeb. All rights reserved.
+            © 2026 Kreaweb. All rights reserved.
           </p>
         </div>
       </div>

@@ -14,50 +14,67 @@ const FAQS = [
 ];
 
 export default function FaqSection() {
-  const [open, setOpen] = useState(0);
+  const [openId, setOpenId] = useState(null);
+
+  const toggle = (id) => {
+    setOpenId((prev) => (prev === id ? null : id));
+  };
 
   return (
     <section id="faq" className="kultara-section scroll-mt-24">
       <div className="kultara-container">
-        <Reveal className="mb-12">
-          <h2 className="max-w-2xl font-display text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-5xl">
+        <Reveal className="mx-auto mb-12 max-w-[760px] text-center">
+          <h2 className="font-display text-3xl font-extrabold leading-tight text-paper sm:text-4xl md:text-5xl">
             Hal yang Sering Ditanyakan
           </h2>
+          <p className="mt-4 text-base leading-relaxed text-paper-muted md:text-lg">
+            Jawaban untuk pertanyaan yang paling sering ditanyakan.
+          </p>
         </Reveal>
 
-        <div className="flex flex-col gap-4">
-          {FAQS.map((item, index) => {
-            const isOpen = open === index;
+        <div className="mx-auto max-w-[720px] space-y-3">
+          {FAQS.map((item) => {
+            const isOpen = openId === item.q;
             return (
               <div
                 key={item.q}
-                className={`rounded-xl border transition-all duration-300 ${
+                className={`rounded-2xl border transition-all duration-300 ${
                   isOpen
-                    ? 'border-crimson-bright shadow-[0_0_0_1px_rgba(194,31,36,0.35),0_0_28px_rgba(194,31,36,0.45)]'
-                    : 'border-crimson/50'
+                    ? 'border-crimson/50 bg-ink-soft shadow-[0_2px_12px_rgba(0,0,0,0.05)]'
+                    : 'border-ink-line bg-ink-soft'
                 }`}
               >
                 <button
                   type="button"
-                  onClick={() => setOpen(isOpen ? -1 : index)}
+                  onClick={() => toggle(item.q)}
                   aria-expanded={isOpen}
-                  className="flex w-full items-center justify-between gap-6 rounded-xl px-5 py-4 text-left"
+                  aria-controls={`faq-panel-${item.q}`}
+                  className="flex w-full items-center justify-between gap-6 px-5 py-4 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-crimson"
                 >
-                  <span className="text-base font-semibold text-white md:text-lg">
+                  <span className="text-base font-semibold text-paper md:text-lg">
                     {item.q}
                   </span>
-                  <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-white">
+                  <span
+                    className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ${
+                      isOpen
+                        ? 'border-crimson bg-crimson text-white'
+                        : 'border-crimson/40 text-crimson-bright'
+                    }`}
+                    aria-hidden="true"
+                  >
                     {isOpen ? <Minus size={18} /> : <ChevronDown size={18} />}
                   </span>
                 </button>
 
+                {/* Answer panel — smooth height animation */}
                 <div
-                  className={`grid transition-all duration-300 ${
+                  id={`faq-panel-${item.q}`}
+                  className={`grid transition-all duration-300 ease-in-out ${
                     isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
                   }`}
                 >
-                  <div className="overflow-hidden rounded-b-xl bg-crimson">
-                    <p className="px-5 pb-5 pt-2 text-base leading-relaxed text-white">
+                  <div className="overflow-hidden">
+                    <p className="px-5 pb-5 text-base leading-relaxed text-paper-muted">
                       {item.a}
                     </p>
                   </div>

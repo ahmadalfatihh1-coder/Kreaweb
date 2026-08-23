@@ -39,13 +39,13 @@ export default function MenuCard({ item, onSelect }) {
         <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-crimson-bright">
           {item.category}
         </span>
-        <h3 className="mt-2 font-display text-xl font-extrabold text-white">
+        <h3 className="mt-2 font-display text-xl font-extrabold text-paper">
           {item.name}
         </h3>
         <div className="mt-1.5 text-lg font-bold text-paper">
           {formatRupiah(item.price)}
         </div>
-        <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-white/70">
+        <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-paper-muted">
           {item.description}
         </p>
       </div>

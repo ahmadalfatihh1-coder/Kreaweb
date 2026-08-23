@@ -4,35 +4,41 @@ import { useState } from 'react';
 import { ChevronDown, Minus } from 'lucide-react';
 
 const FAQS = [
-  {
+
+   {
     id: '01',
-    question: 'Website ini cocok untuk siapa?',
-    answer:
-      'Cocok untuk UMKM, company profile, portfolio, personal brand, jasa profesional, yayasan, dan organisasi.',
+    question: 'Saya tidak paham soal website, apakah tetap bisa membuat website di Kreaweb?',
+    answer: 'Tentu bisa. Anda tidak perlu memahami coding atau hal teknis lainnya. Kami membantu dari proses perencanaan, desain, pengembangan hingga website siap digunakan.'
   },
   {
     id: '02',
-    question: 'Apakah website sepenuhnya menjadi milik klien?',
-    answer:
-      'Ya. Domain, hosting, dan source code menjadi milik Anda tanpa biaya tambahan.',
+    question: 'Apakah website saya bisa muncul di Google?',
+    answer:'Bisa dioptimalkan agar lebih mudah ditemukan oleh mesin pencari. Namun, posisi website di Google tidak dapat dijamin karena peringkat pencarian dipengaruhi banyak faktor dan dapat berubah seiring waktu.'
+       
   },
   {
     id: '03',
-    question: 'Apakah keamanan website kokoh?',
-    answer: 'Tentu saja, website memiliki sertifikat SSL  dan telah melalui uji coba keamanan cyber sebelum di publish.',
+    question: 'Apakah website sepenuhnya menjadi milik klien?',
+    answer:
+      'Ya. Domain, hosting, dan source code menjadi milik klien jika diminta tanpa biaya tambahan.',
   },
   {
     id: '04',
+    question: 'Apakah keamanan website kokoh?',
+    answer: 'Tentu saja, website memiliki sertifikat keamanan domain dan telah melalui uji coba keamanan cyber sebelum di publish.',
+  },
+  {
+    id: '05',
     question: 'Apakah tersedia maintenance setelah website selesai?',
     answer: 'Ya. Kami bantu perbaiki bug atau error setelah website diluncurkan.',
   },
   {
-    id: '05',
+    id: '06',
     question: 'Apakah website dapat dikembangkan lagi di masa depan?',
     answer: 'Bisa banget. Website bisa ditambah fitur, halaman, atau perubahan desain kapan saja.',
   },
   {
-    id: '06',
+    id: '07',
     question: 'Berapa lama pengerjaan website?',
     answer: 'Umumnya 4–7 hari, tergantung jumlah halaman dan fitur.',
   },
@@ -46,13 +52,13 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="bg-[#f8fafc] py-16 md:py-24">
+    <section id="faq" className="bg-[#f8fafc] py-16 md:py-24 dark:bg-[#0b1220]">
       <div className="mx-auto max-w-[720px] px-5 md:px-8">
-        <div className="mx-auto mb-10 max-w-[560px] text-center md:mb-14">
-          <h2 className="text-[26px] font-bold leading-[1.2] text-[#0f172a] sm:text-[32px] md:text-[38px]">
+        <div className="mx-auto mb-10 max-w-[760px] text-center md:mb-14">
+          <h2 className="text-[32px] font-bold leading-[1.2] text-[#0f172a] sm:text-[40px] md:text-[48px] dark:text-white">
             Pertanyaan yang sering ditanyakan.
           </h2>
-          <p className="mt-4 text-[15px] leading-relaxed text-slate-500 md:text-[16px]">
+          <p className="mt-4 text-[15px] leading-relaxed text-slate-500 md:text-[16px] dark:text-slate-400">
             Jawaban untuk pertanyaan yang paling sering ditanyakan.
           </p>
         </div>
@@ -64,7 +70,7 @@ export default function FAQ() {
               <div
                 key={faq.id}
                 className={`rounded-2xl border transition-all duration-300 ${
-                  isOpen ? 'border-slate-300 bg-white shadow-[0_2px_12px_rgba(0,0,0,0.04)]' : 'border-slate-200/70 bg-white'
+                  isOpen ? 'border-slate-300 bg-white shadow-[0_2px_12px_rgba(0,0,0,0.04)] dark:border-slate-700 dark:bg-[#111a2e]' : 'border-slate-200/70 bg-white dark:border-slate-800 dark:bg-[#111a2e]'
                 }`}
               >
                 <button
@@ -73,7 +79,7 @@ export default function FAQ() {
                   aria-controls={`faq-panel-${faq.id}`}
                   className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
-                  <span className="text-[15px] font-semibold text-[#0f172a] md:text-[16px]">
+                  <span className="text-[15px] font-semibold text-[#0f172a] md:text-[16px] dark:text-white">
                     {faq.question}
                   </span>
                   <span
@@ -94,7 +100,7 @@ export default function FAQ() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-5 pb-5 text-[14px] leading-relaxed text-slate-500">
+                    <p className="px-5 pb-5 text-[14px] leading-relaxed text-slate-500 dark:text-slate-400">
                       {faq.answer}
                     </p>
                   </div>

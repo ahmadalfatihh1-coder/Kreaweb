@@ -9,10 +9,10 @@ export default function InstagramSection() {
     <section className="border-y border-ink-line bg-ink-soft/30">
       <div className="kultara-container py-16 md:py-20">
         <Reveal>
-          <h2 className="font-display text-3xl font-extrabold text-white sm:text-4xl">
+          <h2 className="font-display text-3xl font-extrabold text-paper sm:text-4xl">
             Lihat Cerita Kami
           </h2>
-          <p className="mt-4 text-white/70">
+          <p className="mt-4 text-paper-muted">
             Ketuk untuk terhubung ke media sosial Kultara.
           </p>
 

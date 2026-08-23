@@ -8,13 +8,13 @@ const STEPS = [
     id: '01',
     icon: MessagesSquare,
     title: 'KONSULTASI & NEGOSIASI',
-    description: 'Kami pahami bisnis, kebutuhan, dan tujuan website Anda.',
+    description: 'Konsultasikan kebutuhan bisnis Anda dan fitur website yang diinginkan.',
     
   },
   {
     id: '02',
     icon: PenTool,
-    title: 'DESAIN UI/UX',
+    title: 'MERANCANG & MENDESAIN',
     description: 'Menyusun struktur halaman dan desain visual sesuai identitas brand Anda.',
   
   },
@@ -22,21 +22,21 @@ const STEPS = [
     id: '03',
     icon: Code2,
     title: 'PENGEMBANGAN',
-    description: 'Desain dikembangkan menjadi website responsif dan siap digunakan.',
+    description: 'Website dikembangkan sesuai dengan desain dan kebutuhan yang telah disepakati.',
     
   },
   {
     id: '04',
     icon: CheckCircle2,
-    title: 'TESTING',
+    title: 'PENGETESAN',
     description: 'Kami periksa semua fungsi dan tampilan agar berjalan lancar.',
     
   },
   {
     id: '05',
     icon: Rocket,
-    title: 'PUBLISH',
-    description: 'Website dipublikasikan dan aset diserahkan sesuai kesepakatan.',
+    title: 'PUBLIKASI',
+    description: 'Website dipublikasikan ke internet dan aset diserahkan sesuai kesepakatan.',
     
   },
 ];
@@ -70,15 +70,13 @@ export default function Process() {
   return (
     <section id="proses" className="bg-[#0f2a4a] py-16 md:py-24">
       <div className="mx-auto max-w-[1280px] px-5 md:px-8 lg:px-10">
-        <div className="mx-auto mb-12 max-w-[640px] text-center md:mb-16">
-          <span className="text-[13px] font-semibold uppercase tracking-[0.15em] text-[#3b82f6]">
-            Alur Pengerjaan 
-          </span>
-          <h2 className="mt-3 text-[26px] font-bold leading-[1.2] text-white sm:text-[32px] md:text-[38px]">
-            Dari Konsultasi hingga Website Siap Digunakan.
+        <div className="mx-auto mb-12 max-w-[760px] text-center md:mb-16">
+          
+          <h2 className="mt-3 text-[32px] font-bold leading-[1.2] text-white sm:text-[40px] md:text-[48px]">
+            Alur Pengerjaan Website
           </h2>
           <p className="mt-4 text-[15px] leading-relaxed text-[#b8c9e0] md:text-[16px]">
-            Proses ini simple, anda hanya perlu memberi informasi dan terima jadi.
+            Proses ini sederhana, Anda hanya perlu memberi informasi dan terima jadi.
           </p>
         </div>
 

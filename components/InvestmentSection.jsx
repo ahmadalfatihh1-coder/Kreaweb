@@ -1,6 +1,6 @@
 'use client';
 
-import { Search, Shield, Clock } from 'lucide-react';
+import { Search, Shield, Clock, TrendingUp, Globe, ShieldCheck } from 'lucide-react';
 
 const POINTS = [
   {
@@ -24,22 +24,40 @@ const POINTS = [
   },
 ];
 
+const FACTS = [
+  {
+    id: 'f1',
+    stat: '75%',
+    label: 'Konsumen menilai bisnis dari website',
+    icon: TrendingUp,
+  },
+  {
+    id: 'f2',
+    stat: '24/7',
+    label: 'Bisnis selalu online & bisa ditemukan',
+    icon: Globe,
+  },
+  {
+    id: 'f3',
+    stat: '2×',
+    label: 'Lebih dipercaya calon pembeli',
+    icon: ShieldCheck,
+  },
+];
+
 export default function InvestmentSection() {
   return (
-    <section className="bg-[#f8fafc] py-16 md:py-24">
+    <section id="investasi" className="scroll-mt-24 bg-[#f8fafc] py-16 md:py-24 dark:bg-[#0b1220]">
       <div className="mx-auto max-w-[1280px] px-5 md:px-8 lg:px-10">
         <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
           {/* Left: Content */}
           <div className="w-full lg:w-1/2">
-            <span className="text-[13px] font-semibold uppercase tracking-[0.15em] text-[#3b82f6]">
-              LEBIH DARI SEKADAR WEBSITE
-            </span>
-            <h2 className="mt-3 text-[26px] font-bold leading-[1.2] text-[#0f172a] sm:text-[32px] md:text-[38px]">
+            <h2 className="mt-3 text-[32px] font-bold leading-[1.2] text-[#0f172a] sm:text-[40px] md:text-[48px] dark:text-white">
               Website yang bagus bukan sekadar pengeluaran.
               <br />
               <span className="text-[#3b82f6]">Ini adalah investasi</span> untuk brand Anda.
             </h2>
-            <p className="mt-4 max-w-[520px] text-[15px] leading-relaxed text-slate-500 md:text-[16px]">
+            <p className="mt-4 max-w-[520px] text-[15px] leading-relaxed text-slate-500 md:text-[16px] dark:text-slate-400">
               Website adalah tempat calon pelanggan mengenal bisnis Anda dan memutuskan apakah
               layak dipercaya.
             </p>
@@ -50,14 +68,14 @@ export default function InvestmentSection() {
                 const Icon = point.icon;
                 return (
                   <div key={point.id} className="flex gap-4">
-                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#3b82f6] text-white shadow-[0_2px_8px_rgba(59,130,246,0.3)]">
-                      <Icon size={20} strokeWidth={1.8} />
+                    <div className="mt-0.5 shrink-0 text-[#3b82f6]">
+                      <Icon size={26} strokeWidth={1.8} />
                     </div>
                     <div>
-                      <h3 className="text-[16px] font-semibold text-[#0f172a]">
+                      <h3 className="text-[16px] font-semibold text-[#0f172a] dark:text-white">
                         {point.title}
                       </h3>
-                      <p className="mt-1 text-[14px] leading-relaxed text-slate-500">
+                      <p className="mt-1 text-[14px] leading-relaxed text-slate-500 dark:text-slate-400">
                         {point.description}
                       </p>
                       {point.examples && (
@@ -65,7 +83,7 @@ export default function InvestmentSection() {
                           {point.examples.map((ex) => (
                             <span
                               key={ex}
-                              className="rounded-full border border-slate-200 bg-white px-3 py-0.5 text-[12px] text-slate-500"
+                              className="rounded-full border border-slate-200 bg-white px-3 py-0.5 text-[12px] text-slate-500 dark:border-slate-700 dark:bg-[#1a2338] dark:text-slate-300"
                             >
                               {ex}
                             </span>
@@ -79,42 +97,31 @@ export default function InvestmentSection() {
             </div>
           </div>
 
-          {/* Right: Visual / Mockup */}
+          {/* Right: Fact bubbles */}
           <div className="w-full lg:w-1/2">
-            <div className="relative mx-auto max-w-[480px]">
-              {/* Browser mockup */}
-              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_8px_40px_rgba(0,0,0,0.06)]">
-                <div className="flex items-center gap-1.5 border-b border-slate-100 bg-slate-50 px-4 py-3">
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f56]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-[#27c93f]" />
-                  <span className="ml-3 h-3 w-48 rounded bg-slate-200" />
-                </div>
-                <div className="space-y-3 p-5">
-                  <div className="space-y-2 rounded-lg bg-[#f8fafc] p-4">
-                    <div className="h-3 w-2/3 rounded bg-slate-200" />
-                    <div className="h-2 w-full rounded bg-slate-100" />
-                    <div className="h-2 w-5/6 rounded bg-slate-100" />
+            {/* Fact bubbles — mobile first, besar memenuhi kotak */}
+            <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-3">
+              {FACTS.map((fact) => {
+                const Icon = fact.icon;
+                return (
+                  <div
+                    key={fact.id}
+                    className="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_12px_30px_-16px_rgba(15,42,74,0.28)] sm:flex-col sm:items-start sm:gap-4 sm:p-5 dark:border-slate-800 dark:bg-[#111a2e]"
+                  >
+                    <span className="shrink-0 text-[#3b82f6]">
+                      <Icon size={28} strokeWidth={1.8} />
+                    </span>
+                    <span className="leading-tight">
+                      <span className="block text-[24px] font-extrabold leading-none text-[#0f172a] sm:text-[30px] dark:text-white">
+                        {fact.stat}
+                      </span>
+                      <span className="mt-1 block text-[13px] font-medium text-slate-600 sm:text-[14px] dark:text-slate-400">
+                        {fact.label}
+                      </span>
+                    </span>
                   </div>
-                  <div className="flex gap-3">
-                    <div className="h-20 flex-1 rounded-lg border border-slate-100 bg-white p-3">
-                      <div className="h-3 w-1/2 rounded bg-slate-100" />
-                      <div className="mt-2 h-3 w-3/4 rounded bg-slate-200" />
-                    </div>
-                    <div className="h-20 flex-1 rounded-lg border border-slate-100 bg-white p-3">
-                      <div className="h-3 w-1/2 rounded bg-slate-100" />
-                      <div className="mt-2 h-3 w-3/4 rounded bg-slate-200" />
-                    </div>
-                  </div>
-                  <div className="h-16 rounded-lg bg-[#f8fafc]" />
-                </div>
-              </div>
-
-              {/* Floating small card */}
-              <div className="absolute -bottom-4 -left-4 hidden rounded-xl border border-slate-100 bg-white px-4 py-3 shadow-[0_4px_16px_rgba(0,0,0,0.06)] md:block">
-                <span className="text-[12px] font-medium text-slate-400">Online 24/7</span>
-                <p className="text-[14px] font-semibold text-[#0f172a]">Selalu Dapat Diakses</p>
-              </div>
+                );
+              })}
             </div>
           </div>
         </div>
