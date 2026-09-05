@@ -14,7 +14,7 @@ const NAV_LINKS = [
   { label: 'Kontak', href: '/kultara/kontak' },
 ];
 
-const CUSTOMER_SERVICE_URL = waLink('Halo Kultara, saya ingin bertanya.');
+const CUSTOMER_SERVICE_URL = waLink('halo Kreaweb, saya suka web seperti kultara ini, mau tanya tanya dulu');
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -55,10 +55,10 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 border-b-2 transition-all duration-300 ${
+        className={`kultara-navbar fixed top-0 left-0 right-0 z-50 border-b-2 transition-all duration-300 ${
           scrolled
-            ? 'border-ink-line bg-ink/80 backdrop-blur-md'
-            : 'border-ink-line/40 bg-transparent'
+            ? 'kultara-navbar--solid border-ink-line bg-ink/80 backdrop-blur-md'
+            : 'kultara-navbar--overlay border-ink-line/40 bg-transparent'
         }`}
       >
         <nav className="mx-auto flex h-[56px] max-w-[1280px] items-center gap-3 px-5 md:px-8 lg:px-10">
@@ -81,7 +81,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-4 first:pl-0 text-[14px] font-medium text-paper-muted transition-colors duration-200 hover:text-paper"
+                className="kultara-nav-link px-4 first:pl-0 text-[14px] font-medium text-paper-muted transition-colors duration-200 hover:text-paper"
               >
                 {link.label}
               </Link>
@@ -90,7 +90,7 @@ export default function Navbar() {
               href={CUSTOMER_SERVICE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="pl-4 text-[14px] font-semibold text-crimson-bright transition-colors duration-200 hover:text-crimson"
+              className="kultara-nav-cta pl-4 text-[14px] font-semibold text-crimson-bright transition-colors duration-200 hover:text-crimson"
             >
               Hubungi Kultara
             </a>
@@ -100,7 +100,7 @@ export default function Navbar() {
             type="button"
             onClick={toggleTheme}
             aria-label={theme === 'light' ? 'Aktifkan mode gelap' : 'Aktifkan mode terang'}
-            className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-ink-line text-paper transition-colors hover:border-crimson/60"
+            className="kultara-theme-toggle inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-ink-line text-paper transition-colors hover:border-crimson/60"
           >
             {theme === 'light' ? <Sun size={18} /> : <Moon size={18} />}
           </button>
@@ -109,7 +109,7 @@ export default function Navbar() {
             onClick={() => setMobileOpen((prev) => !prev)}
             aria-label={mobileOpen ? 'Tutup menu' : 'Buka menu'}
             aria-expanded={mobileOpen}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-paper transition-colors hover:bg-ink-raised lg:hidden"
+            className="kultara-nav-burger inline-flex h-10 w-10 items-center justify-center rounded-lg text-paper transition-colors hover:bg-ink-raised lg:hidden"
           >
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
           </button>

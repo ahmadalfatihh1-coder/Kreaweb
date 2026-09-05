@@ -10,7 +10,7 @@ const EVENT_TYPES = [
   'Corporate lunch',
 ];
 
-const EVENT_URL = waLink('Halo Kultara, saya ingin konsultasi acara private dining.');
+const EVENT_URL = waLink('halo Kreaweb, saya suka web seperti kultara ini, mau tanya tanya dulu');
 
 export default function PrivateEventSection() {
   return (

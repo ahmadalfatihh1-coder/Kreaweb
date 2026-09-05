@@ -15,7 +15,7 @@ const NAV = [
 
 export default function Footer() {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/6282161175424', '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/6283891420388?text=${encodeURIComponent('Halo Kreaweb, saya mau tanya tanya dulu')}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -69,16 +69,16 @@ export default function Footer() {
                   className="flex items-center gap-2 text-[14px] text-slate-300 transition-colors duration-200 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   <MessageCircle size={16} className="text-slate-500" />
-                  WhatsApp: 082161175424
+                  WhatsApp: 0838 9142 0388
                 </button>
               </li>
               <li>
                 <a
-                  href="mailto:halo@kreaweb.com"
+                  href="mailto:fatihgogglework@gmail.com"
                   className="flex items-center gap-2 text-[14px] text-slate-300 transition-colors duration-200 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   <Mail size={16} className="text-slate-500" />
-                  halo@kreaweb.com
+                  fatihgogglework@gmail.com
                 </a>
               </li>
             </ul>
@@ -91,7 +91,7 @@ export default function Footer() {
             </h4>
             <div className="flex gap-3">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/kreawebid?stkn=MTA5dngzZG9rbTlidg=="
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram Kreaweb"
@@ -100,7 +100,7 @@ export default function Footer() {
                 <Instagram size={16} />
               </a>
               <a
-                href="https://www.tiktok.com/"
+                href="https://www.tiktok.com/@kreawebjasabuatwebsite?_r=1&_t=ZS-99UBVndi3O6"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok Kreaweb"
@@ -109,7 +109,7 @@ export default function Footer() {
                 <Music2 size={16} />
               </a>
               <a
-                href="mailto:halo@kreaweb.com"
+                href="mailto:fatihgogglework@gmail.com"
                 aria-label="Email Kreaweb"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-700 text-slate-300 transition-colors duration-200 hover:border-slate-500 hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >

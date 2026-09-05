@@ -43,8 +43,6 @@ export default function MenuCarousel() {
   }, []);
 
   const slide = sideCount >= 2 ? 55 : 45; // horizontal spread per slot (in % of card width)
-  const angle = sideCount >= 2 ? 28 : 24; // rotateY degrees per slot
-  const depth = sideCount >= 2 ? 70 : 48; // translateZ depth per slot (px)
   const scaleBase = sideCount >= 2 ? 0.86 : 0.85; // scale multiplier per slot distance
 
   const getStepPx = useCallback(() => {
@@ -209,7 +207,6 @@ export default function MenuCarousel() {
             <div
               ref={stageRef}
               className="relative h-[480px] w-full sm:h-[560px] md:h-[600px]"
-              style={{ perspective: '1500px' }}
             >
               {ITEMS.map((item, i) => {
                 const raw = normalizeOffset(i - activeIndex) + offset;
@@ -219,13 +216,12 @@ export default function MenuCarousel() {
                 const clickable = ad <= sideCount + 0.5;
 
                 const x = raw * slide;
-                const z = -ad * depth;
-                const ry = -raw * angle;
                 const sc = Math.pow(scaleBase, ad);
                 const opacity = clamp(1 - ad * 0.34, 0, 1);
-                const brightness = clamp(1 - ad * 0.2, 0.12, 1);
-                const blur = ad > 0 ? Math.min(ad * 0.7, 2) : 0;
+                const shade = clamp(ad * 0.4, 0, 0.55);
                 const zIndex = Math.round(100 - ad * 40);
+
+                if (!inView) return null;
 
                 return (
                   <div
@@ -234,24 +230,19 @@ export default function MenuCarousel() {
                     aria-hidden={!inView}
                     className="mc-card absolute inset-0 m-auto aspect-[3/4] w-[min(74vw,290px)] overflow-hidden rounded-2xl bg-ink-soft sm:w-[320px] md:w-[340px]"
                     style={{
-                      transform: `translateX(${x}%) translateZ(${z}px) rotateY(${ry}deg) scale(${sc})`,
+                      transform: `translateX(${x}%) scale(${sc})`,
                       opacity,
-                      filter: `brightness(${brightness}) blur(${blur}px)`,
                       zIndex,
-                      visibility: inView ? 'visible' : 'hidden',
+                      visibility: 'visible',
                       pointerEvents: clickable ? 'auto' : 'none',
                       transformOrigin: 'center center',
-                      willChange: 'transform, opacity, filter',
                       borderStyle: 'solid',
                       borderWidth: 1,
                       borderColor: isActive
                         ? 'rgba(194,31,36,0.7)'
                         : 'rgba(35,35,38,0.9)',
-                      boxShadow: isActive
-                        ? '0 0 0 1px rgba(194,31,36,0.35), 0 40px 90px rgba(0,0,0,0.65)'
-                        : '0 24px 60px rgba(0,0,0,0.5)',
                       transition: transitioning
-                        ? 'transform 320ms cubic-bezier(0.22, 1, 0.36, 1), opacity 320ms ease, filter 320ms ease'
+                        ? 'transform 320ms cubic-bezier(0.22, 1, 0.36, 1), opacity 320ms ease'
                         : 'none',
                     }}
                   >
@@ -260,9 +251,18 @@ export default function MenuCarousel() {
                       src={item.image}
                       alt={item.name}
                       draggable={false}
+                      decoding="async"
                       className="absolute inset-0 h-full w-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-transparent" />
+                    <div
+                      aria-hidden="true"
+                      className="pointer-events-none absolute inset-0 bg-black"
+                      style={{
+                        opacity: shade,
+                        transition: transitioning ? 'opacity 320ms ease' : 'none',
+                      }}
+                    />
 
                     {item.badges.length > 0 && (
                       <div className="absolute left-4 top-4 flex flex-wrap gap-2">
@@ -302,7 +302,7 @@ export default function MenuCarousel() {
             type="button"
             onClick={() => navigate(activeIndex - 1)}
             aria-label="Menu sebelumnya"
-            className="absolute left-2 top-1/2 z-30 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/50 text-white backdrop-blur transition-colors hover:border-crimson/60 hover:text-white active:border-crimson active:bg-crimson active:text-white sm:left-5"
+            className="absolute left-2 top-1/2 z-[120] inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white transition-colors hover:border-crimson/60 hover:text-white active:border-crimson active:bg-crimson active:text-white sm:left-5"
           >
             <ChevronLeft size={20} />
           </button>
@@ -310,7 +310,7 @@ export default function MenuCarousel() {
             type="button"
             onClick={() => navigate(activeIndex + 1)}
             aria-label="Menu berikutnya"
-            className="absolute right-2 top-1/2 z-30 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/50 text-white backdrop-blur transition-colors hover:border-crimson/60 hover:text-white active:border-crimson active:bg-crimson active:text-white sm:right-5"
+            className="absolute right-2 top-1/2 z-[120] inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white transition-colors hover:border-crimson/60 hover:text-white active:border-crimson active:bg-crimson active:text-white sm:right-5"
           >
             <ChevronRight size={20} />
           </button>

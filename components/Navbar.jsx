@@ -51,7 +51,7 @@ export default function Navbar() {
   };
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/6282161175424', '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/6283891420388?text=${encodeURIComponent('Halo Kreaweb, saya mau tanya tanya dulu')}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -106,7 +106,7 @@ export default function Navbar() {
               onClick={handleWhatsApp}
               className="rounded-full bg-wa-green px-5 py-2.5 text-[14px] font-semibold text-white transition-all duration-200 hover:bg-wa-green-dark hover:shadow-[0_4px_14px_rgba(37,211,102,0.3)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wa-green"
             >
-              Konsultasi
+              Tanya
             </button>
           </div>
 
@@ -156,7 +156,7 @@ export default function Navbar() {
               onClick={() => { closeMobile(); handleWhatsApp(); }}
               className="w-full rounded-full bg-wa-green py-3.5 text-[15px] font-semibold text-white transition-all duration-200 hover:bg-wa-green-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wa-green"
             >
-              Konsultasi Gratis
+             Tanya tanya dulu
             </button>
           </div>
         </div>

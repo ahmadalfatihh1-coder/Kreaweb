@@ -250,3 +250,48 @@ html.kultara-dark {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* ================================================
+   NAVBAR — warna elemen sesuai kondisi
+   - Overlay (belum scroll, di atas hero): elemen putih
+   - Solid (saat scroll, latar krem): tema asli agar mudah dibaca
+   - Ikon toggle tema (matahari/bintang): selalu putih
+   ================================================ */
+:where(html:not(.kultara-dark)) .kultara-navbar--overlay {
+  --kt-paper: 255 255 255;
+  --kt-paper-muted: 255 255 255;
+  --kt-paper-faint: 255 255 255;
+  --kt-ink-line: 255 255 255;
+}
+
+:where(html:not(.kultara-dark)) .kultara-navbar--overlay .kultara-nav-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+:where(html:not(.kultara-dark)) .kultara-navbar--overlay .kultara-nav-cta {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(255, 255, 255, 0.55);
+}
+:where(html:not(.kultara-dark)) .kultara-navbar--overlay .kultara-nav-cta:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+:where(html:not(.kultara-dark)) .kultara-navbar--overlay .kultara-nav-burger:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Ikon toggle tema (matahari/bintang): SELALU putih */
+.kultara-navbar .kultara-theme-toggle {
+  color: #ffffff;
+}
+.kultara-navbar .kultara-theme-toggle:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Saat scroll (latar krem): lingkaran gelap agar ikon putih tetap kontras */
+:where(html:not(.kultara-dark)) .kultara-navbar--solid .kultara-theme-toggle {
+  background-color: rgb(39 30 23);
+  border-color: rgb(39 30 23);
+}

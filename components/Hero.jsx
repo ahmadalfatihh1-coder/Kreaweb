@@ -4,7 +4,7 @@ import { MessageCircle, ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/6282161175424', '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/6283891420388?text=${encodeURIComponent('Halo Kreaweb, saya mau tanya tanya dulu')}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -39,7 +39,7 @@ export default function Hero() {
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-wa-green px-7 py-3.5 text-[15px] font-semibold text-white transition-all duration-200 hover:bg-wa-green-dark hover:shadow-[0_6px_22px_rgba(37,211,102,0.25)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wa-green active:scale-[0.98]"
               >
                 <MessageCircle size={18} />
-                Konsultasi Gratis
+                Tanya tanya dulu
               </button>
 
               <a

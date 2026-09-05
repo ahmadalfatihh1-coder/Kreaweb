@@ -4,7 +4,7 @@ import { MessageCircle, Instagram, Music2 } from 'lucide-react';
 
 export default function FinalCTA() {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/6282161175424', '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/6283891420388?text=${encodeURIComponent('Halo Kreaweb, saya mau tanya tanya dulu')}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -28,13 +28,13 @@ export default function FinalCTA() {
           </button>
 
           <p className="mt-4 text-[13px] text-slate-500">
-            WhatsApp: <span className="text-slate-300">082161175424</span>
+            WhatsApp: <span className="text-slate-300">0838 9142 0388</span>
           </p>
 
           {/* Social links */}
           <div className="mt-6 flex items-center justify-center gap-4">
             <a
-              href="https://www.tiktok.com/"
+              href="https://www.tiktok.com/@kreawebjasabuatwebsite?_r=1&_t=ZS-99UBVndi3O6"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok Kreaweb"
@@ -43,7 +43,7 @@ export default function FinalCTA() {
               <Music2 size={18} />
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/kreawebid?stkn=MTA5dngzZG9rbTlidg=="
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram Kreaweb"

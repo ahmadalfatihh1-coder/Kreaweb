@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { KULTARA_CONFIG, waLink } from './kultara-config';
 
-const WHATSAPP_URL = waLink('Halo Kultara, saya ingin bertanya.');
+const WHATSAPP_URL = waLink('halo Kreaweb, saya suka web seperti kultara ini, mau tanya tanya dulu');
 
 const NAV_LINKS = [
   { label: 'Beranda', href: '/kultara' },

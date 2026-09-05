@@ -12,7 +12,7 @@ export default function ReservationSection() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const message = `Halo Kultara, saya ingin reservasi.\n\nNama: ${nama}\nTanggal: ${tanggal}\nJam: ${jam}\nJumlah orang: ${jumlah}`;
+    const message = 'halo Kreaweb, saya suka web seperti kultara ini, mau tanya tanya dulu';
     window.open(waLink(message), '_blank', 'noopener,noreferrer');
   };
 

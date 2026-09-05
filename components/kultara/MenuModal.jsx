@@ -84,7 +84,7 @@ export default function MenuModal({ item, onClose }) {
 
           <div className="mt-6 flex flex-wrap gap-3">
             <a
-              href={waLink(`Halo Kultara, saya ingin memesan ${item.name} (${formatRupiah(item.price)}).`)}
+              href={waLink('halo Kreaweb, saya suka web seperti kultara ini, mau tanya tanya dulu')}
               target="_blank"
               rel="noopener noreferrer"
               className="kultara-btn kultara-btn-wa"

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
 import { waLink } from './kultara-config';
 
-const WHATSAPP_URL = waLink('Halo Kultara, saya ingin bertanya.');
+const WHATSAPP_URL = waLink('halo Kreaweb, saya suka web seperti kultara ini, mau tanya tanya dulu');
 
 export default function FloatingActions() {
   const [showTop, setShowTop] = useState(false);

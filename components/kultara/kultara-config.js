@@ -4,11 +4,11 @@
 
 export const KULTARA_CONFIG = {
   // Nomor WhatsApp (format internasional, tanpa tanda +)
-  whatsappNumber: '6282161175424',
+  whatsappNumber: '6283891420388',
 
   // Placeholder URL — ganti sesuai akun/klien asli
-  instagramUrl: 'https://www.instagram.com/',
-  tiktokUrl: 'https://www.tiktok.com/',
+  instagramUrl: 'https://www.instagram.com/kreawebid?stkn=MTA5dngzZG9rbTlidg==',
+  tiktokUrl: 'https://www.tiktok.com/@kreawebjasabuatwebsite?_r=1&_t=ZS-99UBVndi3O6',
   gofoodUrl: 'https://gofood.co.id/',
   grabfoodUrl: 'https://food.grab.com/id/',
   googleMapsUrl: 'https://maps.google.com/?q=Jl.+Nusantara+No.+20+Jakarta',
@@ -19,7 +19,7 @@ export const KULTARA_CONFIG = {
 
   // Informasi lokasi & kontak
   alamat: 'Jl. Nusantara No. 20, Jakarta, Indonesia',
-  telepon: '0821-6117-5424',
+  telepon: '0838-9142-0388',
   jamBuka: '10.00',
   jamTutup: '22.00',
   hariLabel: 'Senin – Minggu',

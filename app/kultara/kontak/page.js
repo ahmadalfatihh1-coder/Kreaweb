@@ -2,7 +2,7 @@ import PageHero from '../../../components/kultara/PageHero';
 import OpeningHours from '../../../components/kultara/OpeningHours';
 import { KULTARA_CONFIG, waLink } from '../../../components/kultara/kultara-config';
 
-const CUSTOMER_SERVICE_URL = waLink('Halo Kultara, saya ingin bertanya.');
+const CUSTOMER_SERVICE_URL = waLink('halo Kreaweb, saya suka web seperti kultara ini, mau tanya tanya dulu');
 
 export const metadata = {
   metadataBase: new URL('https://kreaweb.id'),

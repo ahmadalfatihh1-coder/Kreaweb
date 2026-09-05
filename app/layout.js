@@ -5,9 +5,8 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export const metadata = {
   metadataBase: new URL('https://kreaweb.id'),
-  title: 'KreaWeb — Jasa Pembuatan Website Profesional',
-  description:
-    'KreaWeb membantu bisnis, UMKM, personal brand, dan organisasi membuat website profesional, modern, responsive, dan terjangkau mulai dari 1 jutaan.',
+  title: 'Kreaweb | Jasa buat website untuk Bisnismu, Mulai 1 jutaan',
+  description: 'kami urus semua masalah pengembangan website dan maintenance kedepan, kamu tinggal konsultasi dan Terima beres',
   keywords: [
     'jasa pembuatan website',
     'jasa website UMKM',
@@ -25,7 +24,7 @@ export const metadata = {
     url: 'https://kreaweb.id',
     type: 'website',
     locale: 'id_ID',
-    siteName: 'KreaWeb',
+    siteName: 'Kreaweb',
     images: [
       {
         url: '/images/ogimage.png',
